@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-nickd" at "2026-09-09T12:18:13.3162917Z"
 Built from '6000.3/staging' branch; Version is '6000.3.19f1 (7689f4515d75) revision 7768564'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26200) Professional' Language: 'pt' Physical Memory: 16252 MB
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'pt' Physical Memory: 24339 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kuert" at "2026-09-09T21:32:28.5223576Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-09-09T12:18:13Z
+Date: 2026-09-09T21:32:28Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.19f1\Editor\Unity.exe
@@ -15,31 +15,31 @@ C:\Program Files\Unity\Hub\Editor\6000.3.19f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/GitHub/TCC
+C:/Users/kuert/OneDrive/Documentos/GitHub/TCC
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58691
+57959
 -parentPid
-14480
+13904
 -analyticsCloudUserId
-4673085152383
+4674177058205
 -analyticsCloudProjectId
 c35c9055-cfd5-49d5-bdd8-1fe921a4d4e1
 -analyticsLocalProjectId
 dfb259ecc147af6458b2d6dea92bfb90
 -licensingIpc
-LicenseClient-nickd
+LicenseClient-kuert
 -job-worker-count
-3
+5
 -background-job-worker-count
 8
 -gc-helper-count
 1
 -name
 AssetImport
-Successfully changed project path to: D:/GitHub/TCC
-D:/GitHub/TCC
+Successfully changed project path to: C:/Users/kuert/OneDrive/Documentos/GitHub/TCC
+C:/Users/kuert/OneDrive/Documentos/GitHub/TCC
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
     "memorysetup-temp-allocator-size-audio-worker=65536"
@@ -75,13 +75,13 @@ D:/GitHub/TCC
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [13860]  Target information:
+Player connection [5280]  Target information:
 
-Player connection [13860]  * "[IP] 10.1.1.73 [Port] 0 [Flags] 2 [Guid] 853806863 [EditorId] 853806863 [Version] 1048832 [Id] WindowsEditor(7,Nick) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [5280]  * "[IP] 192.168.10.8 [Port] 0 [Flags] 2 [Guid] 2240911170 [EditorId] 2240911170 [Version] 1048832 [Id] WindowsEditor(7,nickkuerten) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [13860] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [13860] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 3
+Player connection [5280] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [5280] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -92,57 +92,55 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 5.71 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 181.05 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.19f1 (7689f4515d75)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/GitHub/TCC/Assets
+[Subsystems] Discovering subsystems at path C:/Users/kuert/OneDrive/Documentos/GitHub/TCC/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 d3d12: failed to query info queue interface (0x80004002).
 Direct3D:
     Version:         Direct3D 12 [level 12.1]
-    Renderer:        NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Renderer:        NVIDIA GeForce GTX 1650 (ID=0x1f9d)
     Vendor:          NVIDIA
-    VRAM:            3962 MB
-    App VRAM Budget: 3367 MB
-    Driver:          27.21.14.6230
+    VRAM:            3935 MB
+    App VRAM Budget: 3344 MB
+    Driver:          32.0.16.1062
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-kuert"
+[Licensing::IpcConnector] LicenseClient-kuert channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kuert-6000.3.19" at "2026-09-09T21:32:30.9545766Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 11840, path: "C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              478e63ad553a474cae39f3e45afc39b6
+  Correlation Id:          8feec2606ea85e823627f48979786c5b
+  External correlation Id: 7093491534676895526
+  Machine Id:              PuQEIQEX8MKgIhcx8ROaY5o+k2g=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-kuert-6000.3.19" (connect: 0.01s, validation: 0.00s, handshake: 0.06s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kuert-6000.3.19-notifications" at "2026-09-09T21:32:31.0279834Z"
+[Licensing::Module] Licensing Background thread has ended after 2.51s
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56480
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-nickd"
-[Licensing::IpcConnector] LicenseClient-nickd channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-nickd-6000.3.19" at "2026-09-09T12:18:17.6283296Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 3684, path: "C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
-[Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              cc7cb912faa34e6287f96b0aa736e068
-  Correlation Id:          89b74aef0d60ddb27eef14ff2fd70e70
-  External correlation Id: 1758325373672867456
-  Machine Id:              1BWYVP1QH2FBqZ8wIG587YipDak=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-nickd-6000.3.19" (connect: 0.00s, validation: 0.00s, handshake: 0.03s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-nickd-6000.3.19-notifications" at "2026-09-09T12:18:17.6688964Z"
-[Licensing::Module] Licensing Background thread has ended after 4.35s
-[Licensing::Module] Licensing is initialized (took 1.89s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
-  Id: 4673085152383-UnityPersXXXX
+  Id: 4674177058205-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 1.916259 seconds.
-- Loaded All Assemblies, in  3.795 seconds
+Registered in 0.972118 seconds.
+- Loaded All Assemblies, in 14.920 seconds
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
@@ -152,35 +150,35 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.078 seconds
-Domain Reload Profiling: 4863ms
-	BeginReloadAssembly (573ms)
+- Finished resetting the current domain, in  0.635 seconds
+Domain Reload Profiling: 15552ms
+	BeginReloadAssembly (11391ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (258ms)
-	RebuildNativeTypeToScriptingClass (133ms)
-	initialDomainReloadingComplete (2083ms)
-	LoadAllAssembliesAndSetupDomain (737ms)
-		LoadAssemblies (563ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (661ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (1042ms)
+	LoadAllAssembliesAndSetupDomain (1798ms)
+		LoadAssemblies (11412ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (725ms)
-			TypeCache.Refresh (722ms)
-				TypeCache.ScanAssembly (684ms)
+		AnalyzeDomain (1766ms)
+			TypeCache.Refresh (1762ms)
+				TypeCache.ScanAssembly (1417ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1079ms)
+	FinalizeReload (636ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (991ms)
+		SetupLoadedEditorAssemblies (586ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (185ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (195ms)
-			ProcessInitializeOnLoadAttributes (398ms)
-			ProcessInitializeOnLoadMethodAttributes (204ms)
+			InitializePlatformSupportModulesInManaged (100ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (129ms)
+			ProcessInitializeOnLoadAttributes (229ms)
+			ProcessInitializeOnLoadMethodAttributes (121ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -190,436 +188,111 @@ Domain Reload Profiling: 4863ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.531 seconds
-Refreshing native plugins compatible for Editor in 10.99 ms, found 5 plugins.
+- Loaded All Assemblies, in 13.164 seconds
+Refreshing native plugins compatible for Editor in 4.57 ms, found 5 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 7.91 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 3.55 ms, found 5 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.124 seconds
-Domain Reload Profiling: 6646ms
-	BeginReloadAssembly (525ms)
+- Finished resetting the current domain, in  2.039 seconds
+Domain Reload Profiling: 15194ms
+	BeginReloadAssembly (339ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (37ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (61ms)
-	RebuildCommonClasses (78ms)
-	RebuildNativeTypeToScriptingClass (30ms)
-	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (1804ms)
-		LoadAssemblies (1124ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (87ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (12636ms)
+		LoadAssemblies (11648ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (984ms)
-			TypeCache.Refresh (632ms)
-				TypeCache.ScanAssembly (543ms)
-			BuildScriptInfoCaches (274ms)
-			ResolveRequiredComponents (59ms)
-	FinalizeReload (4125ms)
+		AnalyzeDomain (1184ms)
+			TypeCache.Refresh (1012ms)
+				TypeCache.ScanAssembly (975ms)
+			BuildScriptInfoCaches (143ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (2040ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3408ms)
+		SetupLoadedEditorAssemblies (1417ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (76ms)
-			SetLoadedEditorAssemblies (30ms)
-			BeforeProcessingInitializeOnLoad (1001ms)
-			ProcessInitializeOnLoadAttributes (1648ms)
-			ProcessInitializeOnLoadMethodAttributes (562ms)
-			AfterProcessingInitializeOnLoad (91ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (275ms)
+			ProcessInitializeOnLoadAttributes (564ms)
+			ProcessInitializeOnLoadMethodAttributes (546ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (51ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 5.66 ms, found 5 plugins.
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 3.57 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7204 unused Assets / (6.1 MB). Loaded Objects now: 8031.
-Memory consumption went from 159.4 MB to 153.3 MB.
-Total: 34.223800 ms (FindLiveObjects: 2.560000 ms CreateObjectMapping: 2.498200 ms MarkObjects: 19.658900 ms  DeleteObjects: 9.505100 ms)
+Curl error 3: URL rejected: Malformed input to a URL function
+Unloading 7204 unused Assets / (4.6 MB). Loaded Objects now: 8030.
+Memory consumption went from 163.3 MB to 158.8 MB.
+Total: 17.446000 ms (FindLiveObjects: 1.696000 ms CreateObjectMapping: 1.761600 ms MarkObjects: 8.012200 ms  DeleteObjects: 5.974300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1106035.773138 seconds.
-  path: Assets/Scenes/MenuLab.unity
-  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MenuLab.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)Curl error 3: URL rejected: Malformed input to a URL function
- -> (artifact id: 'da45cf741132f8dc1870d6acfbde43d7') in 0.2172511 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 1057.992896 seconds.
-  path: Assets/MenuLab/prefabs/12-13 Variant.prefab
-  artifactKey: Guid(ae077ede7e793c6488adc68cab8a6be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/prefabs/12-13 Variant.prefab using Guid(ae077ede7e793c6488adc68cab8a6be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71df809944f949aa34d5c0ac3d2ee780') in 0.8158482 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
-
-========================================================================
-Received Import Request.
-  Time since last request: 247.705216 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/14-15.png
-  artifactKey: Guid(47e0f1d6fe62b79488bc837b38135ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/14-15.png using Guid(47e0f1d6fe62b79488bc837b38135ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[Licensing::Client] Successfully resolved entitlement details
- -> (artifact id: 'd75744198f2264a99dfd983f4290eef1') in 1.8704924 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 483
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.625848 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/14-15.png
-  artifactKey: Guid(47e0f1d6fe62b79488bc837b38135ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/14-15.png using Guid(47e0f1d6fe62b79488bc837b38135ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a468fefd16477afe93e130f05f30082') in 1.3843409 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 483
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.069808 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/14-15.png
-  artifactKey: Guid(47e0f1d6fe62b79488bc837b38135ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/14-15.png using Guid(47e0f1d6fe62b79488bc837b38135ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59e817f2c2f1d4901b648b2f7cddb5c7') in 1.3487697 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 483
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.466821 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png
-  artifactKey: Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png using Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '843216d5ecdc2ea607b106c32bf05a7c') in 1.6158897 seconds
+  Time since last request: 75284.065555 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/12-13.png
+  artifactKey: Guid(e8fa2c793f4164141b0e95348395b10f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/12-13.png using Guid(e8fa2c793f4164141b0e95348395b10f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '42fa1121f8c6f8a24837c325eea8a651') in 0.7886205 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 531
 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.758553 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/18-19.png
-  artifactKey: Guid(57e596f7876849b478bede9885399019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/18-19.png using Guid(57e596f7876849b478bede9885399019) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0d6b2fea9326a290c787a09c396c66e') in 1.4941134 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 533
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.184940 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/20-21.png
-  artifactKey: Guid(e5b641e64b8dd91449717af03599a709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/20-21.png using Guid(e5b641e64b8dd91449717af03599a709) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a062587d2e4679d75274e220acb0f7b') in 1.4209664 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 492
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.033206 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/22-23.png
-  artifactKey: Guid(980435369f8cd1b41b5f9a9e1dff2984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/22-23.png using Guid(980435369f8cd1b41b5f9a9e1dff2984) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87e6966a419f662acd331e3a10ab9834') in 1.5629835 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 554
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.674527 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/24-25.png
-  artifactKey: Guid(e55e412e204ead640955a82e06674ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/24-25.png using Guid(e55e412e204ead640955a82e06674ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ecb8caddcf4757f0e6451bbc8bed722') in 1.4808902 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 515
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.859596 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/26-27.png
-  artifactKey: Guid(a6347f67854077b4e9c5a5852715e157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/26-27.png using Guid(a6347f67854077b4e9c5a5852715e157) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ec844bfe617bd3c1aff52b90c0db281') in 1.6716653 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 572
-
-========================================================================
-Received Import Request.
-  Time since last request: 39.539323 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/28-29.png
-  artifactKey: Guid(3306ccc187d592145992ee7339c1e9ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/28-29.png using Guid(3306ccc187d592145992ee7339c1e9ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4dc9afef7b44a51963f785785d412525') in 1.6166337 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 506
-
-========================================================================
-Received Import Request.
-  Time since last request: 225.128977 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/30-31.png
-  artifactKey: Guid(1f3f7f371305c8442bd76f54083e99dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/30-31.png using Guid(1f3f7f371305c8442bd76f54083e99dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4294d4d6124aaed19cf49f34a274d00a') in 1.9064367 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 588
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.168810 seconds.
+  Time since last request: 0.000032 seconds.
   path: Assets/MenuLab/imgs/jogo/livro/helpbook/32-33.png
-  artifactKey: Guid(d5028f4f95e4a3949aff3bd7e45be374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/32-33.png using Guid(d5028f4f95e4a3949aff3bd7e45be374) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c13e8f6a8ff2b7e2e74c14c254babea0') in 2.206744 seconds
+  artifactKey: Guid(d5028f4f95e4a3949aff3bd7e45be374) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/32-33.png using Guid(d5028f4f95e4a3949aff3bd7e45be374) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '63790ff33a4adb3ac5d57f3f145bde6b') in 0.6356106 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 513
 
 ========================================================================
 Received Import Request.
-  Time since last request: 222.916327 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/34-35.png
-  artifactKey: Guid(c1ae0e0935feae446bd03f0c2d5870be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/34-35.png using Guid(c1ae0e0935feae446bd03f0c2d5870be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85be0f3b9a1d245914ad92d708a7513f') in 1.8246457 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 530
+  Time since last request: 0.000045 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/00-01.png
+  artifactKey: Guid(a004be8b87b5fe842bba0e1384909acb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/00-01.png using Guid(a004be8b87b5fe842bba0e1384909acb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c51b026b3d63469fe19087adffc77f6c') in 1.1379581 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 945
 
 ========================================================================
 Received Import Request.
-  Time since last request: 27.745528 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/36-37.png
-  artifactKey: Guid(d15e1ca03d729df419b24ea2a8af8cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/36-37.png using Guid(d15e1ca03d729df419b24ea2a8af8cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '91815f6f5f84fc77589f70d985c34f93') in 2.0555189 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 591
-
-========================================================================
-Received Import Request.
-  Time since last request: 61.800702 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/38-39.png
-  artifactKey: Guid(3dedaaa7f5b4b8b4cb7af3800bed2fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/38-39.png using Guid(3dedaaa7f5b4b8b4cb7af3800bed2fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3888d703875751a029def1ffe0a418fc') in 1.9796936 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 562
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.193665 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/helpbook/40-41.png
-  artifactKey: Guid(838b6e88bbcd8ab4cbd2a465b116eca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/40-41.png using Guid(838b6e88bbcd8ab4cbd2a465b116eca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00b9ec98005af32fb482a3b52a567d9d') in 3.3501724 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 925
-
-========================================================================
-Received Import Request.
-  Time since last request: 108.499372 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb2cd86344d2bccc9a6ab94c336ae7b2') in 0.1979464 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.536542 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '858231a8f675aa2bab3b62d2ff55dedd') in 0.5822926 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 251.967800 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0fa912845aadacf1717b6c9a5b4b969') in 0.0398392 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.731056 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '85ecb266a737c2ed82be56ba015c3316') in 0.0429143 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.936454 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15ad39aafb4799641afd4f6c6955994e') in 0.0116312 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.900316 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '97d5567a5913cad74ddd7cb290384d80') in 0.0246912 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 40.525018 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e2ae8a97915c95ee232982a8f0de1e7') in 0.0090513 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.896801 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f7c572f34b749301a7c0194fc2e049e1') in 0.0311869 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.745975 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0bb171e59d422b6e6d0bea23f49377c9') in 0.0094335 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.895954 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '242abd5cfd0cf076005c8df1812dbb7e') in 0.0297128 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 59.974679 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1800f9fecffdd86722fba7ecb6586c49') in 0.0118174 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.795149 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fc8f7e74c80da7d4792b6c78ff2e7c64') in 0.0342797 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.090846 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae6ca899fe70d0534b623f9d4e50cd16') in 0.015393 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.878653 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ecad8da164cc3cd394df28aeb51c72d4') in 0.0365212 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.838519 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19474e5089280fe92715194ee100ba42') in 0.0100826 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.900122 seconds.
-  path: Assets/MenuLab/prefabs/JumpToBtn.prefab
-  artifactKey: Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/prefabs/JumpToBtn.prefab using Guid(076b9e58493196040a28b64435f0915f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8b9169faed1e9a4b16a51d747b0f9268') in 0.0344489 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 273.652892 seconds.
-  path: Assets/MenuLab/fonts/Bree_Serif/BreeSerif-Regular SDF.asset
-  artifactKey: Guid(2aa4e65b46a923b4889915eae5b86da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/fonts/Bree_Serif/BreeSerif-Regular SDF.asset using Guid(2aa4e65b46a923b4889915eae5b86da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89dbeef0325aff641fbcd1bf9729392d') in 1.5649923 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 46.366889 seconds.
-  path: Assets/MenuLab/prefabs/ChapterJumpBtn.prefab
-  artifactKey: Guid(54b51f5f297773f469b846451dc158d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/prefabs/ChapterJumpBtn.prefab using Guid(54b51f5f297773f469b846451dc158d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29d78f7900e324a263fb90c7217e6056') in 0.3328986 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/MenuLab/prefabs/ChapterJumpBtn.prefab
-  artifactKey: Guid(54b51f5f297773f469b846451dc158d3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/prefabs/ChapterJumpBtn.prefab using Guid(54b51f5f297773f469b846451dc158d3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1f4efad37540175d3351adbf50e94c5f') in 0.1751292 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 67.602684 seconds.
-  path: Assets/MenuLab/prefabs/ChapterJumpBtn.prefab
-  artifactKey: Guid(54b51f5f297773f469b846451dc158d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/prefabs/ChapterJumpBtn.prefab using Guid(54b51f5f297773f469b846451dc158d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f702d398447b5d52cc2b3556e9b14545') in 0.0314121 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.625705 seconds.
-  path: Assets/MenuLab/prefabs/ChapterJumpBtn.prefab
-  artifactKey: Guid(54b51f5f297773f469b846451dc158d3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/prefabs/ChapterJumpBtn.prefab using Guid(54b51f5f297773f469b846451dc158d3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0f7836ab7927a8ef3805718f7e0338c9') in 0.0509826 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 11072.165394 seconds.
-  path: Assets/MenuLab/imgs/jogo/despensa.png
-  artifactKey: Guid(45fddfabda0422a46983d980dcfac071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/despensa.png using Guid(45fddfabda0422a46983d980dcfac071) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bbfff3477ca3a99522de9664fe64b8f6') in 0.3162034 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000423 seconds.
+  Time since last request: 0.000031 seconds.
   path: Assets/MenuLab/imgs/jogo/despensa.png
   artifactKey: Guid(45fddfabda0422a46983d980dcfac071) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/imgs/jogo/despensa.png using Guid(45fddfabda0422a46983d980dcfac071) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8136d10e0438cff6db805f1e65673a24') in 0.3898293 seconds
+Start importing Assets/MenuLab/imgs/jogo/despensa.png using Guid(45fddfabda0422a46983d980dcfac071) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '78e3ae19ea50f0a8af9a5d3d60dd7ba1') in 0.0305329 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3226.264452 seconds.
-  path: Assets/MenuLab/imgs/jogo/pantry.png
-  artifactKey: Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/pantry.png using Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5423a416c9d1dc93a19a047fd50d9eb') in 0.2505652 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000040 seconds.
+  path: Assets/Editor Default Resources/Febucci/HierarchyData.asset
+  artifactKey: Guid(91de1cadb99be9546bdf4a25fecf709a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Editor Default Resources/Febucci/HierarchyData.asset using Guid(91de1cadb99be9546bdf4a25fecf709a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3d7425c2cc4b1bfdcf211d71778057cd') in 0.04108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.442549 seconds.
-  path: Assets/MenuLab/imgs/jogo/pantry.png
-  artifactKey: Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/imgs/jogo/pantry.png using Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c219157c1f91de9ee323c0808eb2f6e9') in 0.0676982 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000022 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/06-07.png
+  artifactKey: Guid(2b72976ade56d9b4dacd0d20e44d7123) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/06-07.png using Guid(2b72976ade56d9b4dacd0d20e44d7123) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '51294125fc3fc7d34979027c7dd40049') in 0.9711319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 836
 
-========================================================================
-Received Import Request.
-  Time since last request: 30.675101 seconds.
-  path: Assets/MenuLab/imgs/jogo/pantry.png
-  artifactKey: Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/jogo/pantry.png using Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'faa171dd220a87b3ee73aef5638094a8') in 0.0348049 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.881391 seconds.
-  path: Assets/MenuLab/imgs/jogo/pantry.png
-  artifactKey: Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/imgs/jogo/pantry.png using Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '26c78e2237a5a8c6a42ce89102e607a2') in 0.0340176 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 148.869870 seconds.
-  path: Assets/MenuLab/prefabs/PantryPrefab.prefab
-  artifactKey: Guid(a2194e4091023944caf8b47b2a811ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/prefabs/PantryPrefab.prefab using Guid(a2194e4091023944caf8b47b2a811ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '471a87c229fa97ea7db195dccf6f2a3b') in 0.0754209 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 92
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.836614 seconds.
-  path: Assets/MenuLab/prefabs/PantryPrefab.prefab
-  artifactKey: Guid(a2194e4091023944caf8b47b2a811ec8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/prefabs/PantryPrefab.prefab using Guid(a2194e4091023944caf8b47b2a811ec8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6946adc8705785fecac60b7569827aaf') in 0.080734 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 92
-
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
