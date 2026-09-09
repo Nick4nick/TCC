@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.19f1 (7689f4515d75) revision 7768564'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26200) Professional' Language: 'pt' Physical Memory: 24355 MB
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'pt' Physical Memory: 24339 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kuert" at "2026-09-09T01:25:49.6851499Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-09-06T20:16:45Z
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kuert" at "2026-09-06T20:16:45.7667914Z"
+Date: 2026-09-09T01:25:49Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.19f1\Editor\Unity.exe
@@ -19,11 +19,11 @@ C:/Users/kuert/OneDrive/Documentos/GitHub/TCC
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-61081
+56455
 -parentPid
-23568
+8616
 -analyticsCloudUserId
-anonymous
+4674177058205
 -analyticsCloudProjectId
 c35c9055-cfd5-49d5-bdd8-1fe921a4d4e1
 -analyticsLocalProjectId
@@ -75,12 +75,12 @@ C:/Users/kuert/OneDrive/Documentos/GitHub/TCC
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [8880]  Target information:
+Player connection [36228]  Target information:
 
-Player connection [8880]  * "[IP] 192.168.25.32 [Port] 0 [Flags] 2 [Guid] 2144181092 [EditorId] 2144181092 [Version] 1048832 [Id] WindowsEditor(7,nickkuerten) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [36228]  * "[IP] 192.168.10.5 [Port] 0 [Flags] 2 [Guid] 3781535883 [EditorId] 3781535883 [Version] 1048832 [Id] WindowsEditor(7,nickkuerten) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [8880] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [8880] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [36228] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [36228] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -92,7 +92,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 22.32 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 34.86 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.19f1 (7689f4515d75)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Resources/UnitySubsystems
@@ -110,25 +110,25 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
-Begin MonoManager ReloadAssembly
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-kuert"
 [Licensing::IpcConnector] LicenseClient-kuert channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kuert-6000.3.19" at "2026-09-06T20:16:47.9324459Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 29568, path: "C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kuert-6000.3.19" at "2026-09-09T01:25:52.5541683Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 20216, path: "C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              34c2959deac449cda31b40b1ba09fb5a
-  Correlation Id:          d49c68708304c618e5a35dbb8cc3f78a
-  External correlation Id: 1893062016621805207
+  Session Id:              d7d3d9cc379940b194e58120df5f8840
+  Correlation Id:          fe3bc0c8818e9344dba0e4fe76ef79bc
+  External correlation Id: 3639080325646433760
   Machine Id:              PuQEIQEX8MKgIhcx8ROaY5o+k2g=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-kuert-6000.3.19" (connect: 0.00s, validation: 0.00s, handshake: 0.01s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kuert-6000.3.19-notifications" at "2026-09-06T20:16:47.9487091Z"
-[Licensing::Module] Licensing Background thread has ended after 2.18s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-kuert-6000.3.19" (connect: 0.00s, validation: 0.00s, handshake: 0.03s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kuert-6000.3.19-notifications" at "2026-09-09T01:25:52.5915264Z"
+[Licensing::Module] Licensing Background thread has ended after 2.91s
+Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
@@ -139,8 +139,8 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.19f1/
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.018149 seconds.
-- Loaded All Assemblies, in  1.014 seconds
+Registered in 0.010994 seconds.
+- Loaded All Assemblies, in  1.220 seconds
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
@@ -150,35 +150,35 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.777 seconds
-Domain Reload Profiling: 1786ms
-	BeginReloadAssembly (369ms)
+- Finished resetting the current domain, in  1.116 seconds
+Domain Reload Profiling: 2330ms
+	BeginReloadAssembly (393ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
+		CreateAndSetChildDomain (2ms)
 	RebuildCommonClasses (109ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (97ms)
-	LoadAllAssembliesAndSetupDomain (415ms)
-		LoadAssemblies (364ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (138ms)
+	LoadAllAssembliesAndSetupDomain (539ms)
+		LoadAssemblies (388ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (407ms)
-			TypeCache.Refresh (402ms)
-				TypeCache.ScanAssembly (372ms)
+		AnalyzeDomain (529ms)
+			TypeCache.Refresh (524ms)
+				TypeCache.ScanAssembly (484ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (777ms)
+	FinalizeReload (1117ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (679ms)
+		SetupLoadedEditorAssemblies (987ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (115ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (154ms)
-			ProcessInitializeOnLoadAttributes (242ms)
-			ProcessInitializeOnLoadMethodAttributes (160ms)
+			InitializePlatformSupportModulesInManaged (169ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (242ms)
+			ProcessInitializeOnLoadAttributes (366ms)
+			ProcessInitializeOnLoadMethodAttributes (197ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -188,759 +188,403 @@ Domain Reload Profiling: 1786ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.749 seconds
-Refreshing native plugins compatible for Editor in 3.96 ms, found 5 plugins.
+- Loaded All Assemblies, in  2.480 seconds
+Refreshing native plugins compatible for Editor in 3.67 ms, found 5 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 6.62 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 5.77 ms, found 5 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.508 seconds
-Domain Reload Profiling: 3249ms
-	BeginReloadAssembly (354ms)
+- Finished resetting the current domain, in  2.171 seconds
+Domain Reload Profiling: 4638ms
+	BeginReloadAssembly (480ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (17ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (68ms)
-	RebuildCommonClasses (81ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (1212ms)
-		LoadAssemblies (791ms)
+		CreateAndSetChildDomain (79ms)
+	RebuildCommonClasses (121ms)
+	RebuildNativeTypeToScriptingClass (43ms)
+	initialDomainReloadingComplete (117ms)
+	LoadAllAssembliesAndSetupDomain (1705ms)
+		LoadAssemblies (1055ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (622ms)
-			TypeCache.Refresh (451ms)
-				TypeCache.ScanAssembly (406ms)
-			BuildScriptInfoCaches (140ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1508ms)
+		AnalyzeDomain (921ms)
+			TypeCache.Refresh (659ms)
+				TypeCache.ScanAssembly (609ms)
+			BuildScriptInfoCaches (216ms)
+			ResolveRequiredComponents (31ms)
+	FinalizeReload (2172ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1217ms)
+		SetupLoadedEditorAssemblies (1769ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (269ms)
-			ProcessInitializeOnLoadAttributes (664ms)
-			ProcessInitializeOnLoadMethodAttributes (246ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (392ms)
+			ProcessInitializeOnLoadAttributes (990ms)
+			ProcessInitializeOnLoadMethodAttributes (341ms)
+			AfterProcessingInitializeOnLoad (12ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 4.02 ms, found 5 plugins.
+		AwakeInstancesAfterBackupRestoration (16ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 5.60 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
 Curl error 3: URL rejected: Malformed input to a URL function
-Unloading 7202 unused Assets / (4.4 MB). Loaded Objects now: 8026.
-Memory consumption went from 160.9 MB to 156.6 MB.
-Total: 20.815400 ms (FindLiveObjects: 1.737800 ms CreateObjectMapping: 1.947500 ms MarkObjects: 10.254600 ms  DeleteObjects: 6.872200 ms)
+Unloading 7202 unused Assets / (4.9 MB). Loaded Objects now: 8027.
+Memory consumption went from 163.4 MB to 158.5 MB.
+Total: 24.623100 ms (FindLiveObjects: 2.417500 ms CreateObjectMapping: 1.355000 ms MarkObjects: 13.364000 ms  DeleteObjects: 7.484200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 799240.825221 seconds.
-  path: Assets/MenuLab/fonts/Bree_Serif/BreeSerif-Regular.ttf
-  artifactKey: Guid(49913105ee4387542b78910b7686cf65) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Bree_Serif/BreeSerif-Regular.ttf using Guid(49913105ee4387542b78910b7686cf65) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '118a96b8975c606a735f9c71314b4680') in 0.1976443 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Unity - OFL.txt
-  artifactKey: Guid(0251f66ebc602a944b35bccd13be2738) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Unity - OFL.txt using Guid(0251f66ebc602a944b35bccd13be2738) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '535a2af038a4710345c6020fbd5f533d') in 0.0147926 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
-  artifactKey: Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader using Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '638194374be0f55be05b2476adfcface') in 0.0263339 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
-  artifactKey: Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc using Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd43dddc7da5df97912c50402bb6c6145') in 0.0168872 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/MenuLab/imgs/mapaFases/mapaFasesBackground.png
-  artifactKey: Guid(573228d589e5f4347ad732d6f2e82f1a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/imgs/mapaFases/mapaFasesBackground.png using Guid(573228d589e5f4347ad732d6f2e82f1a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7b38c74edf9feab997edc5788307200d') in 0.0914489 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/MenuLab/fonts/Dekko/Dekko-Regular SDF.asset
-  artifactKey: Guid(0a40b8c6465d0ae44867fbee5902edf5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Dekko/Dekko-Regular SDF.asset using Guid(0a40b8c6465d0ae44867fbee5902edf5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f870fb81854c805205efe77133ded730') in 0.0869729 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scenes/14 - Multi Font & Sprites.unity
-  artifactKey: Guid(22a2fba786ad4c40ac0ba09f0b933100) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/14 - Multi Font & Sprites.unity using Guid(22a2fba786ad4c40ac0ba09f0b933100) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b6598938cb096336e2fd55be2b09bf9e') in 0.0178406 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat
-  artifactKey: Guid(22262639920f43d6be32430e4e58350d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat using Guid(22262639920f43d6be32430e4e58350d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '825d4e99d7206900819b82430aacbe8c') in 0.0429174 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity
-  artifactKey: Guid(5fe2257128d9401fad0790f581dc8a6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity using Guid(5fe2257128d9401fad0790f581dc8a6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1112156256b332c63b78d80338a1af6e') in 0.0159111 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/MenuLab/fonts/Roboto_Slab/LICENSE.txt
-  artifactKey: Guid(0ceb5077db6a5ef4fbc79f218b366466) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Roboto_Slab/LICENSE.txt using Guid(0ceb5077db6a5ef4fbc79f218b366466) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7041a4b53dd66a7d7bdfef38e0bb2b91') in 0.016044 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/MenuLab/fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght SDF.asset
-  artifactKey: Guid(6e1ca58ba59ec4b47a668b4089ada32d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght SDF.asset using Guid(6e1ca58ba59ec4b47a668b4089ada32d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2236592d14ceaf27e39aeb219d291fe7') in 0.0305581 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '38f94018c0836159da425f329eeb7a67') in 0.135433 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity
-  artifactKey: Guid(16177da2e3254cee91944756d5f8ddd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity using Guid(16177da2e3254cee91944756d5f8ddd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8c8f432e55f2530f1a2d0c73997ac5b7') in 0.0189287 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/MenuLab/fonts/Roboto_Slab/README.txt
-  artifactKey: Guid(e7796971ac4e91d4692be31bf92cbc38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Roboto_Slab/README.txt using Guid(e7796971ac4e91d4692be31bf92cbc38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e8dce2ce9e1dd9b3f55f00705c2e4239') in 0.0150108 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph
-  artifactKey: Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph using Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bbf4842c20e139f71ec32ba5e484b317') in 0.0243253 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Scenes/MenuLab.unity
-  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MenuLab.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'adf7f95695b1eab961dfc4c6eacfc597') in 0.0233752 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
-  artifactKey: Guid(c8d12adcee749c344b8117cf7c7eb912) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader using Guid(c8d12adcee749c344b8117cf7c7eb912) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '323b39d6a9a9969e5b46c7cef4861a48') in 0.0167877 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs
-  artifactKey: Guid(6f2c5b59b6874405865e2616e4ec276a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs using Guid(6f2c5b59b6874405865e2616e4ec276a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '61a780d7991099fdb138370ad7219273') in 0.0186243 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scripts/ShaderPropAnimator.cs
-  artifactKey: Guid(2787a46a4dc848c1b4b7b9307b614bfd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/ShaderPropAnimator.cs using Guid(2787a46a4dc848c1b4b7b9307b614bfd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '13ece6f6351d6e6e0e906aa3196cafda') in 0.0139743 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_DigitValidator.cs
-  artifactKey: Guid(1a7eb92a01ed499a987bde9def05fbce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_DigitValidator.cs using Guid(1a7eb92a01ed499a987bde9def05fbce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8107c5886e59d79355d407fadc76f273') in 0.013019 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs
-  artifactKey: Guid(e4e0d9ccee5f4950be8979268c9014e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs using Guid(e4e0d9ccee5f4950be8979268c9014e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f24939f4961806f7ba8e7ddf2b297c09') in 0.0144608 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg
-  artifactKey: Guid(85ac55597b97403c82fc6601a93cf241) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg using Guid(85ac55597b97403c82fc6601a93cf241) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '443f02647448fcc69d3a63a6d12736c8') in 0.0223498 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/MenuLab/imgs/telas/jogo em si (5).png
-  artifactKey: Guid(aa89a958a31575f4d9855fb49c9abc17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/imgs/telas/jogo em si (5).png using Guid(aa89a958a31575f4d9855fb49c9abc17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df7b86d113d884ba13e5caaa173269f3') in 0.0289993 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/MenuLab/fonts/Cormorant_Garamond/static/CormorantGaramond-Bold.ttf
-  artifactKey: Guid(955703a70b1fca54488e0dac1e8abddd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Cormorant_Garamond/static/CormorantGaramond-Bold.ttf using Guid(955703a70b1fca54488e0dac1e8abddd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ff29ae1d7351aaef35296eec6b3acb1') in 0.0221333 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
-  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bf9c9847a8c28eab08d6fa2a1b9b0e91') in 0.0305525 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/MenuLab/fonts/Cormorant_Garamond/static/CormorantGaramond-LightItalic.ttf
-  artifactKey: Guid(20ce7a742b3d4f840a2538e5988b58ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Cormorant_Garamond/static/CormorantGaramond-LightItalic.ttf using Guid(20ce7a742b3d4f840a2538e5988b58ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e471072e3a5ac08436a6115bf6ac9b67') in 0.0222947 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/MenuLab/fonts/Cormorant_Garamond/static/CormorantGaramond-BoldItalic.ttf
-  artifactKey: Guid(5cd713831edb72147847d4a868cdad0e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Cormorant_Garamond/static/CormorantGaramond-BoldItalic.ttf using Guid(5cd713831edb72147847d4a868cdad0e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a2f48925c4831dec9f6c40d7625ab114') in 0.0249728 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/MenuLab/fonts/Cormorant_Garamond/static/CormorantGaramond-Bold SDF.asset
-  artifactKey: Guid(0098c25481d9f934e821560bb200f7b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Cormorant_Garamond/static/CormorantGaramond-Bold SDF.asset using Guid(0098c25481d9f934e821560bb200f7b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b9efb6f8ae70aadc0f3c6396aadf70d7') in 0.0384819 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs
-  artifactKey: Guid(4f19c7f94c794c5097d8bd11e39c750d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs using Guid(4f19c7f94c794c5097d8bd11e39c750d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e8181ef509ca4091d9bdfdccc65bf912') in 0.0204781 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 2857.833854 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/18-19.png
+  artifactKey: Guid(57e596f7876849b478bede9885399019) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/18-19.png using Guid(57e596f7876849b478bede9885399019) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3df026aa550d2b3fbc0d9902a2f14571') in 1.3700766 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 533
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000053 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_18pt-ExtraLight SDF.asset
-  artifactKey: Guid(b72fb27ec003620489172fe9baf21d33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_18pt-ExtraLight SDF.asset using Guid(b72fb27ec003620489172fe9baf21d33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e4d8684d5e5ea1fb38473f18ade09b8c') in 0.0414505 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/42-43.png
+  artifactKey: Guid(053d94824b5e65a4d9b465bcbd60219e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/42-43.png using Guid(053d94824b5e65a4d9b465bcbd60219e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd33331d22f9b8a52cc5b09fc45275907') in 2.0695662 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1020
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_18pt-ExtraLight.ttf
-  artifactKey: Guid(9c69f007a61881749bd0d2e13d9e2f60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_18pt-ExtraLight.ttf using Guid(9c69f007a61881749bd0d2e13d9e2f60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '57a82b3fb3c22055da84d076d8bc37f8') in 0.0240493 seconds
+  Time since last request: 0.000063 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/40-41.png
+  artifactKey: Guid(838b6e88bbcd8ab4cbd2a465b116eca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/40-41.png using Guid(838b6e88bbcd8ab4cbd2a465b116eca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4dc739edad804a4d874da940abd7c1f8') in 5.0330042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 925
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/14-15.png
+  artifactKey: Guid(47e0f1d6fe62b79488bc837b38135ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/14-15.png using Guid(47e0f1d6fe62b79488bc837b38135ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '56e30e3da1ea3b57bf2507c9459e2772') in 2.3453856 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 483
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png
+  artifactKey: Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png using Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2560064a135b629970a1dd557304f5fc') in 2.5579663 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 531
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/24-25.png
+  artifactKey: Guid(e55e412e204ead640955a82e06674ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/24-25.png using Guid(e55e412e204ead640955a82e06674ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '257ad9100f4e6ae9e66a8bf3d7da878a') in 2.4793205 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 515
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.186645 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/00-01.png
+  artifactKey: Guid(a004be8b87b5fe842bba0e1384909acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/00-01.png using Guid(a004be8b87b5fe842bba0e1384909acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9be760fb41ea6fc05b9e14b18fa47ea') in 0.0576635 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_18pt-Bold SDF.asset
-  artifactKey: Guid(762496db9c9867b49808f402e74a9a04) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_18pt-Bold SDF.asset using Guid(762496db9c9867b49808f402e74a9a04) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9febdcaf64b4427980e3a4c2e3fa2bf7') in 0.0328565 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/MenuLab/fonts/Cormorant_Garamond/static/CormorantGaramond-Medium SDF.asset
-  artifactKey: Guid(e4e2b99a0c5fe6d4f894c999244c6cfb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Cormorant_Garamond/static/CormorantGaramond-Medium SDF.asset using Guid(e4e2b99a0c5fe6d4f894c999244c6cfb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '06fa9608b91a1d0933e56b514a345259') in 0.0338168 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scenes/18 - ScrollRect & Masking & Layout.unity
-  artifactKey: Guid(03f9d74cec8e4b94a29d2dfd177c821b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/18 - ScrollRect & Masking & Layout.unity using Guid(03f9d74cec8e4b94a29d2dfd177c821b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f90b3b45cd4765048ea17b7b4ffc9ce2') in 0.0206872 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_18pt-SemiBoldItalic SDF.asset
-  artifactKey: Guid(7ac8a630d676e8a4ab07cb2851232d13) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_18pt-SemiBoldItalic SDF.asset using Guid(7ac8a630d676e8a4ab07cb2851232d13) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '776489ceee22cd77f9cbe84966d1205a') in 0.0357463 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_24pt-BlackItalic SDF.asset
-  artifactKey: Guid(85aa33980678e0843aa543d7e1f0ec1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_24pt-BlackItalic SDF.asset using Guid(85aa33980678e0843aa543d7e1f0ec1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9efb75e53f9fbde31724714c6ab5ced8') in 0.0303768 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_24pt-Bold SDF.asset
-  artifactKey: Guid(3f1b26d740aea49468f168d971f0fe0d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_24pt-Bold SDF.asset using Guid(3f1b26d740aea49468f168d971f0fe0d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a7c77adab13cfbf045a79814271b6683') in 0.0305196 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_18pt-ThinItalic.ttf
-  artifactKey: Guid(ee0ef08c1c354bb4fbb4a1172e43c147) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_18pt-ThinItalic.ttf using Guid(ee0ef08c1c354bb4fbb4a1172e43c147) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a2f9ef9ab60538181963eec778224e9f') in 0.0233524 seconds
+  Time since last request: 0.000041 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/20-21.png
+  artifactKey: Guid(e5b641e64b8dd91449717af03599a709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/20-21.png using Guid(e5b641e64b8dd91449717af03599a709) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '458708cbb4f0be4bc706b66044387d8e') in 0.0748136 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_24pt-BoldItalic.ttf
-  artifactKey: Guid(d4f3115f11bfccd41971a013837f24e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_24pt-BoldItalic.ttf using Guid(d4f3115f11bfccd41971a013837f24e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ccbb3c62b35abf375ec4e039c2e1d7f') in 0.018167 seconds
+  Time since last request: 0.000067 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png
+  artifactKey: Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png using Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50c603e91e3ec3594d58512ae85144a4') in 0.0592925 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_18pt-Medium SDF.asset
-  artifactKey: Guid(81580f61519b92d4d988058c5f4551e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_18pt-Medium SDF.asset using Guid(81580f61519b92d4d988058c5f4551e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '155ac596088d4b35bc8c586abaadd06d') in 0.0289716 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_24pt-ExtraLightItalic.ttf
-  artifactKey: Guid(b035e5881924ec040b8b5367a26d10a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_24pt-ExtraLightItalic.ttf using Guid(b035e5881924ec040b8b5367a26d10a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ebec5136bf9b85270d02425199bfd159') in 0.0195016 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_24pt-LightItalic SDF.asset
-  artifactKey: Guid(a91555009bcbcde438ece38eb95ab9e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_24pt-LightItalic SDF.asset using Guid(a91555009bcbcde438ece38eb95ab9e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ebe2127085456115e77f5058a04ce6d5') in 0.0294487 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_24pt-MediumItalic SDF.asset
-  artifactKey: Guid(4211c2793a375cd48aa2c77140cca2d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_24pt-MediumItalic SDF.asset using Guid(4211c2793a375cd48aa2c77140cca2d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b1bd5a95acfd6b1b6bfbfc612cfb48b') in 0.0310257 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000035 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_24pt-ExtraBoldItalic SDF.asset
-  artifactKey: Guid(58bb384aa6c293c47a0bfb21221a4da0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_24pt-ExtraBoldItalic SDF.asset using Guid(58bb384aa6c293c47a0bfb21221a4da0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a024ef83d2b3f3bd7c28e0299285a6f1') in 0.0301818 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_24pt-SemiBold.ttf
-  artifactKey: Guid(d4bc97e7d000fd145a7b525e20ce5b4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_24pt-SemiBold.ttf using Guid(d4bc97e7d000fd145a7b525e20ce5b4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '20cbe107c60384e842e2a8e0c0ff3f89') in 0.0213377 seconds
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/24-25.png
+  artifactKey: Guid(e55e412e204ead640955a82e06674ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/24-25.png using Guid(e55e412e204ead640955a82e06674ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba5bacc2b7ea1a0b0b6146953e3dba97') in 0.0601462 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_28pt-Italic.ttf
-  artifactKey: Guid(dc8e4a3b241cb1847b0611597f1522ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_28pt-Italic.ttf using Guid(dc8e4a3b241cb1847b0611597f1522ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5eb0ffc38dc3e5627d4a59b13d6987a9') in 0.0228215 seconds
+  Time since last request: 0.037015 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/24-25.png
+  artifactKey: Guid(e55e412e204ead640955a82e06674ec3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/24-25.png using Guid(e55e412e204ead640955a82e06674ec3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7e7a84f1b04583fce7ef514fa7f271de') in 0.1718249 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_28pt-ExtraBold.ttf
-  artifactKey: Guid(fb9842c97c627b7468d5ee92d98898a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_28pt-ExtraBold.ttf using Guid(fb9842c97c627b7468d5ee92d98898a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b10db4e23b1f92692b056b159e50eb30') in 0.0214523 seconds
+  Time since last request: 0.000041 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/12-13.png
+  artifactKey: Guid(e8fa2c793f4164141b0e95348395b10f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/12-13.png using Guid(e8fa2c793f4164141b0e95348395b10f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '12d5bbc8f6de91ca318497f97f3fcbaf') in 0.1791859 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_28pt-BoldItalic SDF.asset
-  artifactKey: Guid(0dfd24ebc82c0bd4d9c0f2c3998f4f49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_28pt-BoldItalic SDF.asset using Guid(0dfd24ebc82c0bd4d9c0f2c3998f4f49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23ccb90676442adb37a55a055a869bf7') in 0.0275 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_28pt-Black SDF.asset
-  artifactKey: Guid(358a5ecdabdecca4abcd5b3e5415d828) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_28pt-Black SDF.asset using Guid(358a5ecdabdecca4abcd5b3e5415d828) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4886dd50348b9c773000a0c0514d1d5e') in 0.0289682 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_28pt-BlackItalic.ttf
-  artifactKey: Guid(bec426d0b50047c4b8366c870937759b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_28pt-BlackItalic.ttf using Guid(bec426d0b50047c4b8366c870937759b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '895ebb8cb73914da240df14e9ffcab0f') in 0.0189372 seconds
+  Time since last request: 0.000086 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/40-41.png
+  artifactKey: Guid(838b6e88bbcd8ab4cbd2a465b116eca8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/40-41.png using Guid(838b6e88bbcd8ab4cbd2a465b116eca8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4ab9c414c6820b1049127fb9de32a1e1') in 0.2542155 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_28pt-Bold SDF.asset
-  artifactKey: Guid(dc58fb66b5af04749a6b341412e76de8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_28pt-Bold SDF.asset using Guid(dc58fb66b5af04749a6b341412e76de8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '85585f8ef978938cde3fcf575f2731d7') in 0.0281485 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/imgCapa.jpg
-  artifactKey: Guid(36c0ea6b22da31f439f4005bb4d110f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/imgs/jogo/livro/imgCapa.jpg using Guid(36c0ea6b22da31f439f4005bb4d110f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c7581741ed40c46112c8c813743d069b') in 0.0288936 seconds
+  Time since last request: 0.000053 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/18-19.png
+  artifactKey: Guid(57e596f7876849b478bede9885399019) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/18-19.png using Guid(57e596f7876849b478bede9885399019) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '826f97c01d68583cb099e39b74a6d968') in 0.1795648 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/MenuLab/fonts/Roboto_Slab/static/RobotoSlab-SemiBold SDF.asset
-  artifactKey: Guid(d22b6e3275ef35943b518ca27a400b35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Roboto_Slab/static/RobotoSlab-SemiBold SDF.asset using Guid(d22b6e3275ef35943b518ca27a400b35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7e301d858a925c59b9869a02f153be29') in 0.0257227 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/DefaultVolumeProfile.asset
-  artifactKey: Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DefaultVolumeProfile.asset using Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '65636432c56742a06922c04c04ec00a3') in 0.0224286 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_18pt-MediumItalic.ttf
-  artifactKey: Guid(c9833a7c26dd43a47819f4c023d5441e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_18pt-MediumItalic.ttf using Guid(c9833a7c26dd43a47819f4c023d5441e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '588b4c7fef8a43f62cbcd6bcd4a556f3') in 0.0182333 seconds
+  Time since last request: 0.000081 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/04-05.png
+  artifactKey: Guid(7294347022d7a314eb58d24c0579e69d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/04-05.png using Guid(7294347022d7a314eb58d24c0579e69d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b399227fd8d556e6ce79b06799caf348') in 0.2682762 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scenes/09 - Margin Tag Example.unity
-  artifactKey: Guid(349f38d3606449708c7340d26740e1e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/09 - Margin Tag Example.unity using Guid(349f38d3606449708c7340d26740e1e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '476c9b78a03e6cff9f3cc4bf098d5d8d') in 0.01581 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 104.949322 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/24-25.png
+  artifactKey: Guid(e55e412e204ead640955a82e06674ec3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/24-25.png using Guid(e55e412e204ead640955a82e06674ec3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e72819296bf514fcd54d793edf022981') in 3.4544276 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 515
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scenes/17 - Old Computer Terminal.unity
-  artifactKey: Guid(3e2e4d7b0bed4cf9ab827e9f32448f69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/17 - Old Computer Terminal.unity using Guid(3e2e4d7b0bed4cf9ab827e9f32448f69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '475b3e515eab8aaa647569fc13f19b7a') in 0.0147408 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000093 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/04-05.png
+  artifactKey: Guid(7294347022d7a314eb58d24c0579e69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/04-05.png using Guid(7294347022d7a314eb58d24c0579e69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ebcb3d7d0d84038f732386d3d2b08ef2') in 10.0603434 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1023
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/MenuLab/fonts/Cormorant_Garamond/static/CormorantGaramond-Regular.ttf
-  artifactKey: Guid(2e47ad0e62bc6794aab7a34561f604d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Cormorant_Garamond/static/CormorantGaramond-Regular.ttf using Guid(2e47ad0e62bc6794aab7a34561f604d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '81748a4cf80c0906bb4137a9a1cae29d') in 0.0216001 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000059 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/40-41.png
+  artifactKey: Guid(838b6e88bbcd8ab4cbd2a465b116eca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/40-41.png using Guid(838b6e88bbcd8ab4cbd2a465b116eca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab8bf4fd2a23313be4f6fd8f7479a2be') in 5.2670742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 925
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset
-  artifactKey: Guid(4c86a3366cd840348ebe8dc438570ee4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset using Guid(4c86a3366cd840348ebe8dc438570ee4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b61a4c83ab78dfdca6379fdf9aee2d7d') in 0.0189467 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000075 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/34-35.png
+  artifactKey: Guid(c1ae0e0935feae446bd03f0c2d5870be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/34-35.png using Guid(c1ae0e0935feae446bd03f0c2d5870be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aa2661b4e452dce4bef7660958d97be7') in 1.2198985 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 530
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset
-  artifactKey: Guid(5cf8ae092ca54931b443bec5148f3c59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset using Guid(5cf8ae092ca54931b443bec5148f3c59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '84334d1bb92a96faedfe0c3c95c47872') in 0.0167997 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000067 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/36-37.png
+  artifactKey: Guid(d15e1ca03d729df419b24ea2a8af8cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/36-37.png using Guid(d15e1ca03d729df419b24ea2a8af8cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '54381a2df8ea031b2129af955a3c0fa4') in 2.9999486 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 591
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs
-  artifactKey: Guid(43bcd35a1c0c40ccb6d472893fe2093f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs using Guid(43bcd35a1c0c40ccb6d472893fe2093f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ce4d620e4190572ffc9d5b6e19ad6da') in 0.0177823 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000074 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/20-21.png
+  artifactKey: Guid(e5b641e64b8dd91449717af03599a709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/20-21.png using Guid(e5b641e64b8dd91449717af03599a709) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86809974c0a3f8c67052009323865c15') in 3.4151649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 492
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs
-  artifactKey: Guid(dc20866c0d5e413ab7559440e15333ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs using Guid(dc20866c0d5e413ab7559440e15333ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8fb2c1272ca9ad92eb1a970394a84b0e') in 0.0159589 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000095 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/32-33.png
+  artifactKey: Guid(d5028f4f95e4a3949aff3bd7e45be374) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/32-33.png using Guid(d5028f4f95e4a3949aff3bd7e45be374) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e80a9389c7a41c65b35543e2fa0c03cd') in 2.4051528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 513
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/MenuLab/fonts/Inter/static/Inter_18pt-LightItalic SDF.asset
-  artifactKey: Guid(7503bb96d01d3424ba21f9693e92fd71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Inter/static/Inter_18pt-LightItalic SDF.asset using Guid(7503bb96d01d3424ba21f9693e92fd71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '52013a88cda7dc94d2ce09c50df0ab52') in 0.0283639 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+  Time since last request: 0.000068 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/00-01.png
+  artifactKey: Guid(a004be8b87b5fe842bba0e1384909acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/00-01.png using Guid(a004be8b87b5fe842bba0e1384909acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa39ba29c2d069037ad31d41290dd889') in 4.9003518 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 945
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000112 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers - OFL.txt
-  artifactKey: Guid(efe0bf4ac872451e91612d1ae593f480) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers - OFL.txt using Guid(efe0bf4ac872451e91612d1ae593f480) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '46327b8f939bbc6a3f99b0786895f678') in 0.0145232 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000077 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/30-31.png
+  artifactKey: Guid(1f3f7f371305c8442bd76f54083e99dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/30-31.png using Guid(1f3f7f371305c8442bd76f54083e99dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f47f2a43672c7b3e1d16b56d13a54a39') in 2.9462445 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 588
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example/Sky and Fog Volume Profile.asset
-  artifactKey: Guid(83ba2e375bed45f48bce43e5a5f7c88a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example/Sky and Fog Volume Profile.asset using Guid(83ba2e375bed45f48bce43e5a5f7c88a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f38aac661f00db5eea02f6c38dcb83cc') in 0.0188848 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000064 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/18-19.png
+  artifactKey: Guid(57e596f7876849b478bede9885399019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/18-19.png using Guid(57e596f7876849b478bede9885399019) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '55181e4cc54c87ee37768827dce35d4d') in 2.634234 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 533
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scenes/21 - Script Example.unity
-  artifactKey: Guid(50f52f9274434ecfb34dd87f0836f323) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/21 - Script Example.unity using Guid(50f52f9274434ecfb34dd87f0836f323) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd6084db83945cd5b1436f41fd60f1e5a') in 0.018777 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 119.340321 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/00-01.png
+  artifactKey: Guid(a004be8b87b5fe842bba0e1384909acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/00-01.png using Guid(a004be8b87b5fe842bba0e1384909acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '23828b0effff7589ddca84c213056adf') in 4.0409781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 945
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/livroAberto.png
-  artifactKey: Guid(e7d1ca8e8e9d9014c96ee9208097bec5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/imgs/jogo/livro/livroAberto.png using Guid(e7d1ca8e8e9d9014c96ee9208097bec5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1eb998db333e89776bc59814db3dc24c') in 0.0267727 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 153.490155 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/02-03.png
+  artifactKey: Guid(660ce9b103dfc234ba732ae50ac289aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/02-03.png using Guid(660ce9b103dfc234ba732ae50ac289aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2440e3ae298a306c7a211f425c6692e') in 5.4345541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1184
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat
-  artifactKey: Guid(f629c6e43dba4bf38cb74d8860150664) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat using Guid(f629c6e43dba4bf38cb74d8860150664) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '59a1fb6a7327e57a8c01f85c1eb55db6') in 0.019422 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 92.474132 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/04-05.png
+  artifactKey: Guid(7294347022d7a314eb58d24c0579e69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/04-05.png using Guid(7294347022d7a314eb58d24c0579e69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa698f49dd0813ef1d11d2a36275bf94') in 3.590324 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1023
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/MenuLab/fonts/Roboto_Slab/static/RobotoSlab-ExtraBold SDF.asset
-  artifactKey: Guid(85853f0177285f34aa2408727b548119) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/fonts/Roboto_Slab/static/RobotoSlab-ExtraBold SDF.asset using Guid(85853f0177285f34aa2408727b548119) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'be5fa204c2cdf8ed801bdd536942ca32') in 0.0320073 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+  Time since last request: 146.678499 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/06-07.png
+  artifactKey: Guid(2b72976ade56d9b4dacd0d20e44d7123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/06-07.png using Guid(2b72976ade56d9b4dacd0d20e44d7123) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ceb58e2ec858b988332e2c9c0706cb3d') in 3.1849204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 836
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat
-  artifactKey: Guid(8b29aaa3eec7468097ff07adfcf29ac9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat using Guid(8b29aaa3eec7468097ff07adfcf29ac9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2bae118703feb8e7f86ac39689c46844') in 0.0303056 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+  Time since last request: 59.095740 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/08-09.png
+  artifactKey: Guid(02b3b55ea87face4db3c7c99552f3597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/08-09.png using Guid(02b3b55ea87face4db3c7c99552f3597) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47675a683ff49298bf340b88e93c37ad') in 3.0556143 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 865
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/MenuLab/imgs/jogo/livro/capaLivro.png
-  artifactKey: Guid(d5de2673196bf3a449061bcc60f739e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/imgs/jogo/livro/capaLivro.png using Guid(d5de2673196bf3a449061bcc60f739e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '75e54163abb2bed3be93ef8983885b8d') in 0.0240328 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 54.600305 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/10-11.png
+  artifactKey: Guid(8c8b59a8ca6ef294896baa9584e59ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/10-11.png using Guid(8c8b59a8ca6ef294896baa9584e59ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e89da5bdf56990ed1873bd2ae8f06579') in 3.640938 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 988
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF - HDRP LIT - Bloom.mat
-  artifactKey: Guid(8d176c01131de8f46ad61094e29d79b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF - HDRP LIT - Bloom.mat using Guid(8d176c01131de8f46ad61094e29d79b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '58c52db44457d3b0488a8269647cab53') in 0.0325391 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 73.522856 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/12-13.png
+  artifactKey: Guid(e8fa2c793f4164141b0e95348395b10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/12-13.png using Guid(e8fa2c793f4164141b0e95348395b10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a86036464b6cac1e122621292ad4f9c9') in 1.7464589 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 531
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd
-  artifactKey: Guid(bb8dfcd263ad4eb383a33d74a720be6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd using Guid(bb8dfcd263ad4eb383a33d74a720be6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a65d9a1b1e80a7004413cd971b250215') in 0.0203071 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 54.866644 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/12-13.png
+  artifactKey: Guid(e8fa2c793f4164141b0e95348395b10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/12-13.png using Guid(e8fa2c793f4164141b0e95348395b10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edd33fe06185de290d5007adf09fe7bd') in 1.7555451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 531
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000073 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
-  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3b9af7faa52c7027f8984882d22d886e') in 0.0278307 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+  Time since last request: 93.666870 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/14-15.png
+  artifactKey: Guid(47e0f1d6fe62b79488bc837b38135ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/14-15.png using Guid(47e0f1d6fe62b79488bc837b38135ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d2962ac10cf19df62102523e67ce223') in 1.6466565 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 483
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs
-  artifactKey: Guid(103e0a6a1d404693b9fb1a5173e0e979) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs using Guid(103e0a6a1d404693b9fb1a5173e0e979) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '967ddf9d30ccb5ec68d977866f54d94a') in 0.0159206 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 93.762964 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png
+  artifactKey: Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png using Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '846c966ef674fa797614d529281ee8ad') in 1.8448428 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 531
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMPro.cginc
-  artifactKey: Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMPro.cginc using Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '52499f368259d5741044bc7b783d9784') in 0.0135326 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 8.080628 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png
+  artifactKey: Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png using Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '170f475d1ec998979e1786376d702099') in 1.8898753 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 531
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg
-  artifactKey: Guid(03d0538de6e24c0f819bfc9ce084dfa9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg using Guid(03d0538de6e24c0f819bfc9ce084dfa9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '901d69ee72339147ce12929d53eb2910') in 0.021123 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 37.364886 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png
+  artifactKey: Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png using Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b8d1996db3148dd4cdc7a229bd2151b9') in 1.8761155 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 531
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d932014f110237565b131fe7478283c') in 0.0022266 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 49.730130 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/18-19.png
+  artifactKey: Guid(57e596f7876849b478bede9885399019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/18-19.png using Guid(57e596f7876849b478bede9885399019) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9127366194057f9dee32dc0fa5dcfb88') in 1.9845246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 533
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/MenuLab/imgs/jogo/despensa.png
-  artifactKey: Guid(45fddfabda0422a46983d980dcfac071) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MenuLab/imgs/jogo/despensa.png using Guid(45fddfabda0422a46983d980dcfac071) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ae696dfadc9ef41cc43a67509f7f7c9a') in 0.0212775 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 44.710710 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/20-21.png
+  artifactKey: Guid(e5b641e64b8dd91449717af03599a709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/20-21.png using Guid(e5b641e64b8dd91449717af03599a709) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cfa39f3f6d014b28498c957d69fee672') in 1.7350477 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 492
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Scenes/06 - Extra Rich Text Examples.unity
-  artifactKey: Guid(39a1fa96ad2a449b908fca29d4297a74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/06 - Extra Rich Text Examples.unity using Guid(39a1fa96ad2a449b908fca29d4297a74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4406e420c3b51220e1923c144943b1db') in 0.0146276 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 16.011621 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/18-19.png
+  artifactKey: Guid(57e596f7876849b478bede9885399019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/18-19.png using Guid(57e596f7876849b478bede9885399019) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c85a149c75985e5db9ecc1f45b4b463c') in 1.8152362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 533
 
 ========================================================================
 Received Import Request.
-  Time since last request: 155.806355 seconds.
-  path: Assets/MenuLab/imgs/telas/feedback.png
-  artifactKey: Guid(ea16df9527f76fd4d974ac22d5c6b67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/telas/feedback.png using Guid(ea16df9527f76fd4d974ac22d5c6b67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e1ce82b3baecd6335b14789db9fb832b') in 0.1276805 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 19.483136 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png
+  artifactKey: Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/16-17.png using Guid(24d44d76e43140c498f2cdee183a6f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '536bb63717ce6b0b556d7039bfe278c2') in 1.863952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 531
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/MenuLab/imgs/telas/jogo em si.png
-  artifactKey: Guid(eb5028fbe325bc24eb1fec5493d23e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/telas/jogo em si.png using Guid(eb5028fbe325bc24eb1fec5493d23e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0556fed507a3e44dd8c54e543bc719d6') in 0.0365188 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 14.032292 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/14-15.png
+  artifactKey: Guid(47e0f1d6fe62b79488bc837b38135ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/14-15.png using Guid(47e0f1d6fe62b79488bc837b38135ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c87cd543f4bfbb3cac702df6b73d168') in 1.6819389 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 483
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/MenuLab/imgs/telas/mapa fases (2).png
-  artifactKey: Guid(d632f5da7cbc7874ba7a3020a24b1d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/telas/mapa fases (2).png using Guid(d632f5da7cbc7874ba7a3020a24b1d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36f817a932733632d3cf8491f6c54dcc') in 0.0294332 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 33.105009 seconds.
+  path: Assets/MenuLab/imgs/jogo/livro/helpbook/22-23.png
+  artifactKey: Guid(980435369f8cd1b41b5f9a9e1dff2984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/livro/helpbook/22-23.png using Guid(980435369f8cd1b41b5f9a9e1dff2984) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77ce76a10e191ac5f2a5835024aa2753') in 2.0273207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 554
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/MenuLab/imgs/telas/Início do jogo.png
-  artifactKey: Guid(95e9bd883674526479cf651f67519cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/telas/Início do jogo.png using Guid(95e9bd883674526479cf651f67519cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '645bbc3a0c7231f5a3346a09905ff16d') in 0.0287369 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/MenuLab/imgs/telas/feedback (2).png
-  artifactKey: Guid(f572c16ab37ed204e90504af8871055c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/telas/feedback (2).png using Guid(f572c16ab37ed204e90504af8871055c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '971a1b5016f1aaf0dcc571c94712286a') in 0.024609 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/MenuLab/imgs/telas/jogo em si (3).png
-  artifactKey: Guid(ea7a99e97bf96344fa3274f505d696bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/telas/jogo em si (3).png using Guid(ea7a99e97bf96344fa3274f505d696bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c450633df14a7419cc542942a50e0a0') in 0.0244442 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/MenuLab/imgs/telas/jogo em si (5).png
-  artifactKey: Guid(aa89a958a31575f4d9855fb49c9abc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MenuLab/imgs/telas/jogo em si (5).png using Guid(aa89a958a31575f4d9855fb49c9abc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd96427647c3d00adbfea40488793a1fb') in 0.0315962 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
