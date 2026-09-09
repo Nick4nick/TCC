@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e4683880117bb40bf96a253db55efe, type: 3}
+  m_Name: HierarchyData
+  m_EditorClassIdentifier: 
+  enabled: 1
+  updateInPlayMode: 1
+  drawActivationToggle: 1
+  icons:
+    enabled: 1
+    aligned: 0
+    pairs:
+    - iconToDraw: {fileID: 2800000, guid: 35553fb32e539b34a978ead6ba83eb10, type: 3}
+      targetClasses:
+      - {fileID: 11500000, guid: 3505be1bed394654c9aed16697b62ab1, type: 3}
+    - iconToDraw: {fileID: 0}
+      targetClasses: []
+  prefabsData:
+    enabled: 0
+    prefabs:
+    - gameObject: {fileID: 2100705880506818182, guid: 32792d111fc785744b01b8b35518b0f9, type: 3}
+      color: {r: 0, g: 0, b: 0, a: 0.03529412}
+    - gameObject: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+  alternatingBackground:
+    enabled: 1
+    color: {r: 0.335849, g: 0.335849, b: 0.335849, a: 0.21176471}
+  separator:
+    enabled: 1
+    startString: =
+    color: {r: 1, g: 0.92119956, b: 0, a: 0.13725491}
+  tree:
+    enabled: 1
+    drawOverlayOnColoredPrefabs: 1
+    dividerHeigth: 0.64
+    baseLevelColor: {r: 0, g: 0, b: 0, a: 1}
+    branches:
+    - overlayColor: {r: 1, g: 0.013986013, b: 0, a: 0.019607844}
+      colors:
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 0, g: 0, b: 0, a: 0.78431374}
+      - {r: 0.6528301, g: 0.01354929, b: 0.32499397, a: 0.5882353}
+      - {r: 1, g: 0.31372547, b: 0.87117237, a: 0.39215687}

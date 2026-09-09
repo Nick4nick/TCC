@@ -1659,7 +1659,7 @@ TextureImporter:
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -1779,10 +1779,10 @@ TextureImporter:
       name: 12-13_3
       rect:
         serializedVersion: 2
-        x: 396
-        y: 935
-        width: 8
-        height: 15
+        x: 1055
+        y: 690
+        width: 460
+        height: 111
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
