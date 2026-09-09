@@ -575,3 +575,51 @@ Received Import Request.
 Start importing Assets/MenuLab/imgs/jogo/despensa.png using Guid(45fddfabda0422a46983d980dcfac071) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8136d10e0438cff6db805f1e65673a24') in 0.3898293 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
+========================================================================
+Received Import Request.
+  Time since last request: 3226.264452 seconds.
+  path: Assets/MenuLab/imgs/jogo/pantry.png
+  artifactKey: Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/pantry.png using Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5423a416c9d1dc93a19a047fd50d9eb') in 0.2505652 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.442549 seconds.
+  path: Assets/MenuLab/imgs/jogo/pantry.png
+  artifactKey: Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/pantry.png using Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c219157c1f91de9ee323c0808eb2f6e9') in 0.0676982 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.675101 seconds.
+  path: Assets/MenuLab/imgs/jogo/pantry.png
+  artifactKey: Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/imgs/jogo/pantry.png using Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'faa171dd220a87b3ee73aef5638094a8') in 0.0348049 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.881391 seconds.
+  path: Assets/MenuLab/imgs/jogo/pantry.png
+  artifactKey: Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/imgs/jogo/pantry.png using Guid(f84880cba2885eb47bd06d9970c71cd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '26c78e2237a5a8c6a42ce89102e607a2') in 0.0340176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 148.869870 seconds.
+  path: Assets/MenuLab/prefabs/PantryPrefab.prefab
+  artifactKey: Guid(a2194e4091023944caf8b47b2a811ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuLab/prefabs/PantryPrefab.prefab using Guid(a2194e4091023944caf8b47b2a811ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '471a87c229fa97ea7db195dccf6f2a3b') in 0.0754209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 92
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.836614 seconds.
+  path: Assets/MenuLab/prefabs/PantryPrefab.prefab
+  artifactKey: Guid(a2194e4091023944caf8b47b2a811ec8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/prefabs/PantryPrefab.prefab using Guid(a2194e4091023944caf8b47b2a811ec8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6946adc8705785fecac60b7569827aaf') in 0.080734 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 92
+
