@@ -410,6 +410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 21776520}
   - component: {fileID: 21776524}
+  - component: {fileID: 21776525}
   m_Layer: 0
   m_Name: FeedbackMenu
   m_TagString: Untagged
@@ -449,10 +450,32 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21776519}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &21776525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21776519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94c5324f2284cd449953b8f38eefd50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Menus
+  _menuManager: {fileID: 308155972}
+  _menuName: FeedbackMenu
+  ButtonsList:
+  - {fileID: 516754060}
+  - {fileID: 194423683}
+  TextsList:
+  - {fileID: 1011005056}
+  - {fileID: 146423335}
+  - {fileID: 260797721}
+  ImagesList: []
 --- !u!1 &22731561
 GameObject:
   m_ObjectHideFlags: 0
@@ -4325,6 +4348,7 @@ GameObject:
   - component: {fileID: 188143988}
   - component: {fileID: 188143987}
   - component: {fileID: 188143986}
+  - component: {fileID: 188143991}
   m_Layer: 5
   m_Name: PopUp
   m_TagString: Untagged
@@ -4393,7 +4417,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!225 &188143989
 CanvasGroup:
@@ -4430,6 +4454,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &188143991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188143985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea89033a3ad96449933fe899f3351cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PopUpManager
+  painel: {fileID: 188143985}
+  mensage: {fileID: 1389554624}
+  btnEsquerdo: {fileID: 1389473085}
+  btnDireito: {fileID: 249979664}
+  botaoEsquerda: {fileID: 819772147}
+  botaoDireita: {fileID: 1863387971}
 --- !u!1001 &190250003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6578,7 +6620,7 @@ GameObject:
   - component: {fileID: 267132002}
   - component: {fileID: 267132001}
   m_Layer: 0
-  m_Name: BackBtn
+  m_Name: BackBackBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7575,6 +7617,7 @@ GameObject:
   - component: {fileID: 308155971}
   - component: {fileID: 308155970}
   - component: {fileID: 308155969}
+  - component: {fileID: 308155972}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -7669,6 +7712,30 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &308155972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308155967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 821bc7f3962c5f24db6f6aa0346be9c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuManager
+  _menus:
+  - Name: MainMenu
+    Group: {fileID: 924793809}
+  - Name: CreditsMenu
+    Group: {fileID: 500011626}
+  - Name: MapMenu
+    Group: {fileID: 669551312}
+  - Name: FeedbackMenu
+    Group: {fileID: 21776524}
+  _menuBackground: {fileID: 2128432244}
+  _transitionDuration: 0.25
+  _initialMenu: MainMenu
 --- !u!1 &310740764
 GameObject:
   m_ObjectHideFlags: 0
@@ -11238,6 +11305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 500011622}
   - component: {fileID: 500011626}
+  - component: {fileID: 500011627}
   m_Layer: 0
   m_Name: CreditsMenu
   m_TagString: Untagged
@@ -11275,10 +11343,28 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500011621}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &500011627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500011621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94c5324f2284cd449953b8f38eefd50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Menus
+  _menuManager: {fileID: 308155972}
+  _menuName: CreditsMenu
+  ButtonsList:
+  - {fileID: 1337376492}
+  TextsList: []
+  ImagesList: []
 --- !u!1001 &501626978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16089,6 +16175,8 @@ GameObject:
   m_Component:
   - component: {fileID: 669551308}
   - component: {fileID: 669551312}
+  - component: {fileID: 669551314}
+  - component: {fileID: 669551313}
   m_Layer: 0
   m_Name: MapMenu
   m_TagString: Untagged
@@ -16130,10 +16218,62 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669551307}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &669551313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669551307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130e647f1c01d8b4785306f57ac28a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelSelectedConfig
+  Empty: {fileID: 957985016}
+  ButtonsList:
+  - {fileID: 267132001}
+  - {fileID: 76953627}
+  - {fileID: 1447686091}
+  ImagesList:
+  - {fileID: 339557216}
+  - {fileID: 1972319338}
+  TextsList:
+  - {fileID: 607280678}
+  - {fileID: 1803930109}
+  - {fileID: 217730889}
+--- !u!114 &669551314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669551307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94c5324f2284cd449953b8f38eefd50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Menus
+  _menuManager: {fileID: 308155972}
+  _menuName: MapMenu
+  ButtonsList:
+  - {fileID: 2113891502}
+  - {fileID: 260034565}
+  - {fileID: 1151822001}
+  - {fileID: 1353602616}
+  - {fileID: 1727690740}
+  - {fileID: 307077775}
+  TextsList: []
+  ImagesList:
+  - {fileID: 947894653}
+  - {fileID: 407598520}
+  - {fileID: 350961465}
+  - {fileID: 886680810}
+  - {fileID: 1703453601}
 --- !u!1001 &671474037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19628,6 +19768,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 819631368}
+  - component: {fileID: 819631369}
   m_Layer: 0
   m_Name: MenuLab
   m_TagString: Untagged
@@ -19652,6 +19793,22 @@ Transform:
   - {fileID: 22731562}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &819631369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819631367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f48942b1a83c2d54e9b16c4f57d8ddbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameConfig
+  _mainMenu: {fileID: 924793810}
+  _creditsMenu: {fileID: 500011627}
+  _mapMenu: {fileID: 669551314}
+  _feedbackMenu: {fileID: 21776525}
 --- !u!1 &819772145
 GameObject:
   m_ObjectHideFlags: 0
@@ -22224,6 +22381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 924793805}
   - component: {fileID: 924793809}
+  - component: {fileID: 924793810}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -22265,6 +22423,27 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &924793810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924793804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94c5324f2284cd449953b8f38eefd50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Menus
+  _menuManager: {fileID: 308155972}
+  _menuName: MainMenu
+  ButtonsList:
+  - {fileID: 571224542}
+  - {fileID: 1270872426}
+  - {fileID: 212797613}
+  - {fileID: 754342382}
+  TextsList: []
+  ImagesList: []
 --- !u!1 &926728511
 GameObject:
   m_ObjectHideFlags: 0
