@@ -19805,6 +19805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48942b1a83c2d54e9b16c4f57d8ddbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameConfig
+  _menuLab: {fileID: 22731561}
   _mainMenu: {fileID: 924793810}
   _creditsMenu: {fileID: 500011627}
   _mapMenu: {fileID: 669551314}

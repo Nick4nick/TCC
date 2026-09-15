@@ -51,6 +51,15 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    public void CloseMenus()
+    {
+        StartCoroutine(SwitchCanvasGroupAnimated(_menuBackground, Turn.off));
+        foreach (MenuPanel menu in _menus)
+        {
+            StartCoroutine(SwitchCanvasGroupAnimated(menu.Group, Turn.off));
+        }
+    }
+
     private IEnumerator SwitchCanvasGroupAnimated(CanvasGroup group, Turn turn)
     {
         if (group == null)
