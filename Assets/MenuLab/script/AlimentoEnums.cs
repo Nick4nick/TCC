@@ -134,6 +134,7 @@ public enum Estado
     Semissolido = 1 << 3,
     [InspectorName("Sólido")] Solido = 1 << 4,
     Viscoso = 1 << 5,
+    [InspectorName("Com caldo")] ComCaldo = 1 << 6,
 }
 
 [Flags]
