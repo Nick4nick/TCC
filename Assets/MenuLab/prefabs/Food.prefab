@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5667259565129387256}
   - component: {fileID: 133217878278987689}
   - component: {fileID: 1709307534622679169}
+  - component: {fileID: 860293788993743356}
   m_Layer: 0
   m_Name: foodImg
   m_TagString: Untagged
@@ -75,6 +76,28 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &860293788993743356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3024941012884026461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
+  Nome: 0
+  Funcao: 0
+  Refeicao: 0
+  Nutrientes: 0
+  Estado: 0
+  Metodo: 0
+  Textura: 0
+  Sabor: 0
+  Cor: 0
+  Grupo: 0
 --- !u!1 &7467093242444651174
 GameObject:
   m_ObjectHideFlags: 0
