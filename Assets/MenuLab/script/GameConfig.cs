@@ -42,6 +42,8 @@ namespace GameTemplate
         [SerializeField] private Button _GameCloseButton;
         [Tooltip("Empty de cada fase, na mesma ordem do Buttons List do MapMenu (elemento 1 a 5)")]
         [SerializeField] private List<GameObject> _phaseEmpties;
+        [Tooltip("Scroll View do Pantry (lista de alimentos), presente durante todas as fases")]
+        [SerializeField] private RectTransform _pantry;
 
         [Space(5)]
         [Header("Briefing")]
@@ -183,6 +185,16 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
             SetupAll();
         }
 
+        private void OnEnable()
+        {
+            FoodDropZone.ContentChanged += UpdateGameCloseButtonInteractable;
+        }
+
+        private void OnDisable()
+        {
+            FoodDropZone.ContentChanged -= UpdateGameCloseButtonInteractable;
+        }
+
         private void SetupAll()
         {
             SetupMenuEvents();
@@ -233,6 +245,8 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
             SetBriefingTexts(_selectedLevelIndex);
 
             _briefingEmpty.SetActive(true);
+
+            ScrollViewUtils.ResetContentPositionY(_briefingEmpty.transform);
         }
 
         private void CloseBriefing()
@@ -295,6 +309,9 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
                     _helpBookPages[i].SetActive(i == pageIndex);
             }
 
+            if (_helpBookPages[pageIndex] != null)
+                ScrollViewUtils.ResetContentPositionY(_helpBookPages[pageIndex].transform);
+
             _helpBookPageIndex = pageIndex;
 
             UpdateHelpBookNavigationButtons();
@@ -331,6 +348,12 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
             {
                 if (_fase5Empties[i] != null)
                     _fase5Empties[i].SetActive(i == index);
+            }
+
+            if (_fase5Empties[index] != null)
+            {
+                ScrollViewUtils.ResetContentPositionY(_fase5Empties[index].transform);
+                ScrollViewUtils.ResetAncestorScrollView(_fase5Empties[index].transform);
             }
 
             _fase5EmptyIndex = index;
@@ -371,6 +394,43 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
                 return;
 
             _phaseEmpties[levelIndex].SetActive(true);
+
+            ScrollViewUtils.ResetContentPositionY(_phaseEmpties[levelIndex].transform);
+            ScrollViewUtils.ResetContentPositionY(_pantry);
+
+            ShowFase5Empty(0);
+
+            UpdateGameCloseButtonInteractable();
+        }
+
+        private void UpdateGameCloseButtonInteractable()
+        {
+            if (_GameCloseButton == null)
+                return;
+
+            _GameCloseButton.interactable = AllDropZonesFilled();
+        }
+
+        private bool AllDropZonesFilled()
+        {
+            if (_phaseEmpties == null || _selectedLevelIndex < 0 || _selectedLevelIndex >= _phaseEmpties.Count)
+                return false;
+
+            GameObject currentPhaseEmpty = _phaseEmpties[_selectedLevelIndex];
+            if (currentPhaseEmpty == null)
+                return false;
+
+            FoodDropZone[] dropZones = currentPhaseEmpty.GetComponentsInChildren<FoodDropZone>(true);
+            if (dropZones.Length == 0)
+                return false;
+
+            foreach (FoodDropZone dropZone in dropZones)
+            {
+                if (dropZone.AlimentoAtual == null)
+                    return false;
+            }
+
+            return true;
         }
 
         private void DeactivateAllPhaseEmpties()
@@ -431,8 +491,8 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
         {
             PopUpManager.Instance.Abrir(
                 "Deseja finalizar o jogo?",
-                "Voltar",
                 "Finalizar",
+                "Voltar",
                 (msg, esq, dir) => PopUpManager.Instance.Fechar(),
                 (msg, esq, dir) =>
                 {
@@ -451,6 +511,8 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
             SetLevelTexts(levelIndex);
 
             _levelSelectedConfig.Empty.SetActive(true);
+
+            ScrollViewUtils.ResetContentPositionY(_levelSelectedConfig.Empty.transform);
         }
 
         private void SetLevelTexts(int levelIndex)

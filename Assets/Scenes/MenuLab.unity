@@ -164,6 +164,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1140489850}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -278,33 +282,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
   m_PrefabInstance: {fileID: 18890100}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &19493945 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6898531964209326612, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 1049922215}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &19493949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19493945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!1001 &20130476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -313,6 +290,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 181506856}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2094,6 +2075,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1140489850}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2699,7 +2684,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: -17, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &137361323
 MonoBehaviour:
@@ -2775,6 +2760,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2057616912}
     m_Modifications:
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 1536
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 258
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1057
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 131072
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 44
+      objectReference: {fileID: 0}
     - target: {fileID: 1266540579715167726, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_text
       value: Sagu de vinho
@@ -2831,6 +2896,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3489958863743330860, guid: 27221251d7d642e4b8506888a054700a, type: 3}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 71
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 768
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1061
+      objectReference: {fileID: 0}
     - target: {fileID: 2592600015513622835, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2883,6 +2988,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3268182011722900006, guid: 88d5a6728cdf1bc49a44faef8883157a, type: 3}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 1028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4878477928400066802, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3011,6 +3156,46 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -35.84348
       objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16384
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 586
+      objectReference: {fileID: 0}
     - target: {fileID: 6625116341185617948, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_text
       value: Refrigerante
@@ -3075,6 +3260,86 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 25.8
       objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 17408
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 384
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 24576
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 586
+      objectReference: {fileID: 0}
     - target: {fileID: 8855285588936439114, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_SizeDelta.y
       value: 95
@@ -3082,6 +3347,46 @@ PrefabInstance:
     - target: {fileID: 8855285588936439114, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -41.1614
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 4104
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 66
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1056
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -3093,31 +3398,7 @@ PrefabInstance:
     - {fileID: 2869663864799189738, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
     - {fileID: 8407563377685954532, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6579375201938834827, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1106334591}
-    - targetCorrespondingSourceObject: {fileID: 2141692572588805615, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1898338491}
-    - targetCorrespondingSourceObject: {fileID: 6898531964209326612, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1748155382}
-    - targetCorrespondingSourceObject: {fileID: 8924048091741141604, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1076969690}
-    - targetCorrespondingSourceObject: {fileID: 2533390395809653589, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1321055826}
-    - targetCorrespondingSourceObject: {fileID: 6330462146944866333, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1680478115}
-    - targetCorrespondingSourceObject: {fileID: 3248271621281242360, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2139919883}
-    - targetCorrespondingSourceObject: {fileID: 276684659858504028, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 706805581}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
 --- !u!224 &142212034 stripped
 RectTransform:
@@ -3535,6 +3816,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1671251149}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3864,6 +4149,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2057616912}
     m_Modifications:
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 2576
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 384
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 2052
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1580
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 4112
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 257
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 588
+      objectReference: {fileID: 0}
     - target: {fileID: 1266540579715167726, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_text
       value: Omelete de legumes
@@ -3920,6 +4285,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2940522787750616363, guid: 4f4c192eb50dd564b81ce334d2d1ecf1, type: 3}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2592600015513622835, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3972,6 +4377,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6872192622231956417, guid: e024b2f6c671eae4bb6ce90977271c74, type: 3}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16384
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 72
+      objectReference: {fileID: 0}
     - target: {fileID: 4878477928400066802, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4100,6 +4545,46 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -35.84348
       objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 6625116341185617948, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_text
       value: Margarina
@@ -4164,6 +4649,86 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 25.8
       objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2049
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 16896
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 65537
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1600
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 4352
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16384
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 72
+      objectReference: {fileID: 0}
     - target: {fileID: 8855285588936439114, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_SizeDelta.y
       value: 95
@@ -4171,6 +4736,46 @@ PrefabInstance:
     - target: {fileID: 8855285588936439114, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -41.1614
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 144
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 131088
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 76
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -5361,6 +5966,7 @@ GameObject:
   - component: {fileID: 220779979}
   - component: {fileID: 220779981}
   - component: {fileID: 220779980}
+  - component: {fileID: 220779982}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -5426,6 +6032,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220779978}
   m_CullTransparentMesh: 1
+--- !u!114 &220779982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220779978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5b9fb68ec1d5849986a81323b1110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDropZone
+  _categoria: 4
+  _refeicao: 0
+  _foodImage: {fileID: 1464336658}
+  _foodNameText: {fileID: 976391556}
 --- !u!1 &232115622
 GameObject:
   m_ObjectHideFlags: 0
@@ -5547,33 +6169,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232115622}
   m_CullTransparentMesh: 1
---- !u!1 &233656936 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8924048091741141604, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 1049922215}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &233656940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233656936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!1 &235833337
 GameObject:
   m_ObjectHideFlags: 0
@@ -6150,6 +6745,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 181506856}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7601,9 +8200,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -9146336171254135938, guid: 298098add2018374fb8c18ea33684225, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -7759,7 +8358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &308155968
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8162,8 +8761,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1157759822}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.7293644}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8404,6 +9003,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1671251149}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8536,9 +9143,9 @@ RectTransform:
   m_Father: {fileID: 943740255}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -668.2946, y: -152.56995}
-  m_SizeDelta: {x: 1903, y: 20}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: -152.56995}
+  m_SizeDelta: {x: -17, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &345285405
 MonoBehaviour:
@@ -8584,7 +9191,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1078363287}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9726652
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8702,33 +9309,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350961463}
   m_CullTransparentMesh: 1
---- !u!1 &356318228 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2533390395809653589, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 1049922215}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &356318232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 356318228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!1 &361308489
 GameObject:
   m_ObjectHideFlags: 0
@@ -9440,6 +10020,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1671251149}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11439,6 +12027,7 @@ GameObject:
   - component: {fileID: 488276339}
   - component: {fileID: 488276341}
   - component: {fileID: 488276340}
+  - component: {fileID: 488276342}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -11504,38 +12093,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488276338}
   m_CullTransparentMesh: 1
---- !u!1 &493902415 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4319556674143084957, guid: e3d480e34c0719648ba97927cfd78cf2, type: 3}
-  m_PrefabInstance: {fileID: 958483718}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &495337806 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2141692572588805615, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 1049922215}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &495337810
+--- !u!114 &488276342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495337806}
+  m_GameObject: {fileID: 488276338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
+  m_Script: {fileID: 11500000, guid: bc5b9fb68ec1d5849986a81323b1110e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDropZone
+  _categoria: 5
+  _refeicao: 0
+  _foodImage: {fileID: 1225172623}
+  _foodNameText: {fileID: 519930260}
+--- !u!1 &493902415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4319556674143084957, guid: e3d480e34c0719648ba97927cfd78cf2, type: 3}
+  m_PrefabInstance: {fileID: 958483718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &495503513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11544,6 +12122,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1140489850}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -12693,7 +13275,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2104250639}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5807053}
+  m_AnchorMin: {x: 0, y: 0.5903644}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -13172,6 +13754,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2057616912}
     m_Modifications:
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 4352
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 804
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1266540579715167726, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_text
       value: "Ma\xE7a"
@@ -13228,6 +13890,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 3576624273383352912, guid: 594f25ac829809a4eaa59add28953ac5, type: 3}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1060
+      objectReference: {fileID: 0}
     - target: {fileID: 2592600015513622835, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -13280,6 +13982,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -4769146584491985919, guid: b06c61f227377654abcfe1b7fbb1f940, type: 3}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1057
+      objectReference: {fileID: 0}
     - target: {fileID: 4878477928400066802, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -13408,6 +14150,46 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -35.84348
       objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 586
+      objectReference: {fileID: 0}
     - target: {fileID: 6625116341185617948, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_text
       value: Legumes cozidos
@@ -13472,6 +14254,86 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 25.8
       objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 20480
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1060
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 4608
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 384
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1632
+      objectReference: {fileID: 0}
     - target: {fileID: 8855285588936439114, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_SizeDelta.y
       value: 96.78
@@ -13479,6 +14341,46 @@ PrefabInstance:
     - target: {fileID: 8855285588936439114, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -41.1614
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 384
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 131072
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1056
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -15491,6 +16393,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1671251149}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -15906,6 +16816,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1381215802}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -16502,6 +17420,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 471793398}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -16704,6 +17630,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1381215802}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -17562,7 +18496,7 @@ RectTransform:
   m_Father: {fileID: 2026137475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.9726652, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -17736,9 +18670,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -9146336171254135938, guid: 298098add2018374fb8c18ea33684225, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -18012,9 +18946,9 @@ RectTransform:
   m_Father: {fileID: 2120788281}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -668.2946, y: -152.56995}
-  m_SizeDelta: {x: 1903, y: 20}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: -152.56995}
+  m_SizeDelta: {x: -17, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &698938094
 MonoBehaviour:
@@ -18060,7 +18994,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 870643281}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9726652
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -18103,33 +19037,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698938092}
   m_CullTransparentMesh: 1
---- !u!1 &706805577 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 276684659858504028, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 142212033}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &706805581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706805577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!1001 &707598631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19151,9 +20058,9 @@ RectTransform:
   m_Father: {fileID: 110142424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -668.2946, y: -152.56995}
-  m_SizeDelta: {x: 1903, y: 20}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: -152.56995}
+  m_SizeDelta: {x: -17, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &749326342
 MonoBehaviour:
@@ -19199,7 +20106,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 688181058}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9726652
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -19499,127 +20406,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754342380}
-  m_CullTransparentMesh: 1
---- !u!1 &755834508
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 755834509}
-  - component: {fileID: 755834512}
-  - component: {fileID: 755834511}
-  - component: {fileID: 755834510}
-  m_Layer: 0
-  m_Name: FinishBtn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &755834509
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755834508}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 885318640}
-  m_Father: {fileID: 1808901963}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -54.99994}
-  m_SizeDelta: {x: 235, y: 80}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &755834510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755834508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 755834511}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &755834511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755834508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 8792429605226109837, guid: 8052162f1b4db8c4ebde681a50ec4387, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &755834512
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755834508}
   m_CullTransparentMesh: 1
 --- !u!1 &759311483
 GameObject:
@@ -20180,6 +20966,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1381215802}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -21071,6 +21861,7 @@ GameObject:
   - component: {fileID: 808857134}
   - component: {fileID: 808857136}
   - component: {fileID: 808857135}
+  - component: {fileID: 808857137}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -21136,6 +21927,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808857133}
   m_CullTransparentMesh: 1
+--- !u!114 &808857137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808857133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5b9fb68ec1d5849986a81323b1110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDropZone
+  _categoria: 4
+  _refeicao: 0
+  _foodImage: {fileID: 1875299986}
+  _foodNameText: {fileID: 1880349982}
 --- !u!1 &819631367
 GameObject:
   m_ObjectHideFlags: 0
@@ -21197,6 +22004,7 @@ MonoBehaviour:
   - {fileID: 1106774554}
   - {fileID: 170511720}
   - {fileID: 1353818940}
+  _pantry: {fileID: 465052926}
   _briefingButton: {fileID: 1872512826}
   _briefingEmpty: {fileID: 1106837062}
   _briefingCloseButton1: {fileID: 232115624}
@@ -21474,9 +22282,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -9146336171254135938, guid: 298098add2018374fb8c18ea33684225, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -21895,8 +22703,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1367575808}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.3702427}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -21946,6 +22754,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1523033112}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -22138,6 +22950,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1381215802}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -22309,7 +23129,7 @@ RectTransform:
   m_Father: {fileID: 1346176161}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.9726652, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -22708,7 +23528,7 @@ RectTransform:
   m_Father: {fileID: 453048830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -22749,143 +23569,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882908569}
-  m_CullTransparentMesh: 1
---- !u!1 &885318639
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 885318640}
-  - component: {fileID: 885318642}
-  - component: {fileID: 885318641}
-  m_Layer: 0
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &885318640
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 885318639}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 755834509}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &885318641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 885318639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Button
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 3289650
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_characterHorizontalScale: 1
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &885318642
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 885318639}
   m_CullTransparentMesh: 1
 --- !u!1 &885367464
 GameObject:
@@ -23672,9 +24355,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -9146336171254135938, guid: 298098add2018374fb8c18ea33684225, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -23747,9 +24430,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -9146336171254135938, guid: 298098add2018374fb8c18ea33684225, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -23885,6 +24568,7 @@ GameObject:
   - component: {fileID: 920915386}
   - component: {fileID: 920915388}
   - component: {fileID: 920915387}
+  - component: {fileID: 920915389}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -23950,6 +24634,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920915385}
   m_CullTransparentMesh: 1
+--- !u!114 &920915389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920915385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5b9fb68ec1d5849986a81323b1110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDropZone
+  _categoria: 2
+  _refeicao: 1
+  _foodImage: {fileID: 824979721}
+  _foodNameText: {fileID: 1448914661}
 --- !u!1 &924793804
 GameObject:
   m_ObjectHideFlags: 0
@@ -25092,6 +25792,7 @@ GameObject:
   - component: {fileID: 968716594}
   - component: {fileID: 968716596}
   - component: {fileID: 968716595}
+  - component: {fileID: 968716597}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -25157,6 +25858,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968716593}
   m_CullTransparentMesh: 1
+--- !u!114 &968716597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968716593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5b9fb68ec1d5849986a81323b1110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDropZone
+  _categoria: 5
+  _refeicao: 0
+  _foodImage: {fileID: 1206359494}
+  _foodNameText: {fileID: 1931564593}
 --- !u!1001 &974573122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25165,6 +25882,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1523033112}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -25614,7 +26335,7 @@ PrefabInstance:
     - target: {fileID: 8123139299040473153, guid: e3d480e34c0719648ba97927cfd78cf2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 4948401663064441708, guid: 980435369f8cd1b41b5f9a9e1dff2984, type: 3}
+      objectReference: {fileID: 4948401663064441708, guid: fa861b0598470d141be8c8f77008ff36, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26298,9 +27019,9 @@ RectTransform:
   m_Father: {fileID: 1920588748}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: -17}
+  m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1011830746
 MonoBehaviour:
@@ -26402,6 +27123,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 471793398}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -26875,9 +27604,9 @@ RectTransform:
   m_Father: {fileID: 1796078241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: -17}
+  m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1038620405
 MonoBehaviour:
@@ -27411,6 +28140,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2057616912}
     m_Modifications:
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 132
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 32768
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 16384
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 78
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 257
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1036
+      objectReference: {fileID: 0}
     - target: {fileID: 1266540579715167726, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_text
       value: Tapioca
@@ -27467,6 +28276,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1885892625759205553, guid: 8d4ad4d0d554ab44b9bb78fc95b6881e, type: 3}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 79
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 4224
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1036
+      objectReference: {fileID: 0}
     - target: {fileID: 2592600015513622835, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -27519,6 +28368,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2918001366550660774, guid: 1936d0316cd81e24a8a9e0cece702c9c, type: 3}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 4128
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 76
+      objectReference: {fileID: 0}
     - target: {fileID: 4878477928400066802, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -27647,6 +28536,46 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -38.4
       objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 132
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 32896
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1036
+      objectReference: {fileID: 0}
     - target: {fileID: 6625116341185617948, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_text
       value: Sorvete
@@ -27711,6 +28640,86 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 25.8
       objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 77
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 65536
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 384
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 132
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1069
+      objectReference: {fileID: 0}
     - target: {fileID: 8855285588936439114, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_SizeDelta.y
       value: 95
@@ -27718,6 +28727,46 @@ PrefabInstance:
     - target: {fileID: 8855285588936439114, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -41.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 132
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 32896
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1036
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -27729,28 +28778,7 @@ PrefabInstance:
     - {fileID: 2869663864799189738, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
     - {fileID: 8407563377685954532, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6579375201938834827, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1168867237}
-    - targetCorrespondingSourceObject: {fileID: 2141692572588805615, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 495337810}
-    - targetCorrespondingSourceObject: {fileID: 6898531964209326612, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 19493949}
-    - targetCorrespondingSourceObject: {fileID: 8924048091741141604, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 233656940}
-    - targetCorrespondingSourceObject: {fileID: 2533390395809653589, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 356318232}
-    - targetCorrespondingSourceObject: {fileID: 6330462146944866333, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2042754622}
-    - targetCorrespondingSourceObject: {fileID: 276684659858504028, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1442390408}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
 --- !u!224 &1049922216 stripped
 RectTransform:
@@ -28299,33 +29327,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071516703}
   m_CullTransparentMesh: 1
---- !u!1 &1076969686 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8924048091741141604, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 142212033}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1076969690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076969686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!1 &1078191784
 GameObject:
   m_ObjectHideFlags: 0
@@ -28399,7 +29400,7 @@ RectTransform:
   m_Father: {fileID: 1337406745}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.9726652, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -29325,33 +30326,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
   m_PrefabInstance: {fileID: 1106239240}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1106334587 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6579375201938834827, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 142212033}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1106334591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106334587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!1 &1106774554
 GameObject:
   m_ObjectHideFlags: 0
@@ -29509,7 +30483,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1904390712}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.7450389
+  m_Size: 0.7278758
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -30217,6 +31191,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1523033112}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -30337,6 +31315,7 @@ GameObject:
   - component: {fileID: 1162902808}
   - component: {fileID: 1162902810}
   - component: {fileID: 1162902809}
+  - component: {fileID: 1162902811}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -30402,6 +31381,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162902807}
   m_CullTransparentMesh: 1
+--- !u!114 &1162902811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162902807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5b9fb68ec1d5849986a81323b1110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDropZone
+  _categoria: 5
+  _refeicao: 2
+  _foodImage: {fileID: 1756448472}
+  _foodNameText: {fileID: 1081103156}
 --- !u!1001 &1166217723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30519,33 +31514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
---- !u!1 &1168867233 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6579375201938834827, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 1049922215}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1168867237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168867233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!1 &1171744436
 GameObject:
   m_ObjectHideFlags: 0
@@ -31069,7 +32037,7 @@ RectTransform:
   m_Father: {fileID: 41763604}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -31146,9 +32114,9 @@ RectTransform:
   m_Father: {fileID: 2016994251}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -668.2946, y: -152.56995}
-  m_SizeDelta: {x: 1903, y: 20}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: -152.56995}
+  m_SizeDelta: {x: -17, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1196784343
 MonoBehaviour:
@@ -31194,7 +32162,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1798788304}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9726652
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -31299,9 +32267,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -9146336171254135938, guid: 298098add2018374fb8c18ea33684225, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -31476,9 +32444,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -9146336171254135938, guid: 298098add2018374fb8c18ea33684225, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -32438,6 +33406,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1671251149}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -32584,7 +33560,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: -17, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1265206192
 MonoBehaviour:
@@ -33257,9 +34233,9 @@ RectTransform:
   m_Father: {fileID: 1920588748}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 20}
+  m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1313704381
 MonoBehaviour:
@@ -33612,33 +34588,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
   m_PrefabInstance: {fileID: 1320026043}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1321055822 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2533390395809653589, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 142212033}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1321055826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321055822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!224 &1322531727 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
@@ -33957,9 +34906,9 @@ RectTransform:
   m_Father: {fileID: 1796078241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 20}
+  m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1330959321
 MonoBehaviour:
@@ -34056,6 +35005,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1523033112}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -34673,7 +35626,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1444028572}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5807053}
+  m_AnchorMin: {x: 0, y: 0.5903644}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -35464,6 +36417,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2057616912}
     m_Modifications:
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 32784
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1060
+      objectReference: {fileID: 0}
     - target: {fileID: 1266540579715167726, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_text
       value: Iogurte
@@ -35520,6 +36553,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 7668713256476781129, guid: 17a13b477dc35884397a19476fe23947, type: 3}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 16416
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 4120
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 588
+      objectReference: {fileID: 0}
     - target: {fileID: 2592600015513622835, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -35572,6 +36645,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2955298487248010068, guid: 5cb8334b35af2f34482edacfb827e308, type: 3}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 584
+      objectReference: {fileID: 0}
     - target: {fileID: 4878477928400066802, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -35700,6 +36813,46 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -42.857925
       objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 65568
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 557056
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 516
+      objectReference: {fileID: 0}
     - target: {fileID: 6625116341185617948, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_text
       value: Frango frito
@@ -35764,6 +36917,86 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 25.8
       objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 257
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 586
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 384
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 584
+      objectReference: {fileID: 0}
     - target: {fileID: 8855285588936439114, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_SizeDelta.y
       value: 98.7907
@@ -35771,6 +37004,46 @@ PrefabInstance:
     - target: {fileID: 8855285588936439114, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -40.15598
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 264
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 520
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -36102,6 +37375,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 181506856}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -36392,6 +37669,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1523033112}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -36504,33 +37785,6 @@ PrefabInstance:
       addedObject: {fileID: 1286650784}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
---- !u!1 &1442390404 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 276684659858504028, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 1049922215}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1442390408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442390404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!114 &1442511042 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4171378559788652801, guid: c2c64550efab6fe4f8f427a5a295c463, type: 3}
@@ -36589,6 +37843,7 @@ GameObject:
   - component: {fileID: 1447517703}
   - component: {fileID: 1447517705}
   - component: {fileID: 1447517704}
+  - component: {fileID: 1447517706}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -36654,6 +37909,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447517702}
   m_CullTransparentMesh: 1
+--- !u!114 &1447517706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447517702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5b9fb68ec1d5849986a81323b1110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDropZone
+  _categoria: 3
+  _refeicao: 0
+  _foodImage: {fileID: 690577500}
+  _foodNameText: {fileID: 1871922790}
 --- !u!1 &1447686089
 GameObject:
   m_ObjectHideFlags: 0
@@ -36923,6 +38194,7 @@ GameObject:
   - component: {fileID: 1449070669}
   - component: {fileID: 1449070671}
   - component: {fileID: 1449070670}
+  - component: {fileID: 1449070672}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -36988,6 +38260,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449070668}
   m_CullTransparentMesh: 1
+--- !u!114 &1449070672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449070668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5b9fb68ec1d5849986a81323b1110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDropZone
+  _categoria: 5
+  _refeicao: 2
+  _foodImage: {fileID: 911229095}
+  _foodNameText: {fileID: 806640000}
 --- !u!1 &1452446197
 GameObject:
   m_ObjectHideFlags: 0
@@ -37340,9 +38628,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -9146336171254135938, guid: 298098add2018374fb8c18ea33684225, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -37469,7 +38757,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: -17, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1480019895
 MonoBehaviour:
@@ -38090,7 +39378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1523033112
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38575,9 +39863,9 @@ RectTransform:
   m_Father: {fileID: 1920588748}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: -17}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1537304457
 MonoBehaviour:
@@ -39322,7 +40610,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 581679140}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5807053}
+  m_AnchorMin: {x: 0, y: 0.5903644}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -39373,6 +40661,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1140489850}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -40317,7 +41609,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 534691971}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.41929471
+  m_Size: 0.4096356
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -40691,6 +41983,7 @@ GameObject:
   - component: {fileID: 1651334855}
   - component: {fileID: 1651334857}
   - component: {fileID: 1651334856}
+  - component: {fileID: 1651334858}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -40756,6 +42049,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651334854}
   m_CullTransparentMesh: 1
+--- !u!114 &1651334858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651334854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5b9fb68ec1d5849986a81323b1110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDropZone
+  _categoria: 5
+  _refeicao: 0
+  _foodImage: {fileID: 918213759}
+  _foodNameText: {fileID: 1659946298}
 --- !u!1 &1653958856
 GameObject:
   m_ObjectHideFlags: 0
@@ -41151,6 +42460,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2057616912}
     m_Modifications:
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 131072
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 76
+      objectReference: {fileID: 0}
     - target: {fileID: 1266540579715167726, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_text
       value: Pudim
@@ -41207,6 +42596,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 7088273367002502312, guid: 797cb11818a986e4898fc00196367b40, type: 3}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 135168
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 590
+      objectReference: {fileID: 0}
     - target: {fileID: 2592600015513622835, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -41259,6 +42688,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2421333295757299266, guid: fb244290315592148b59c098896d57fd, type: 3}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 32768
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 584
+      objectReference: {fileID: 0}
     - target: {fileID: 4878477928400066802, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -41387,6 +42856,46 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -35.84348
       objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 59
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 514
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 1057
+      objectReference: {fileID: 0}
     - target: {fileID: 6625116341185617948, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_text
       value: Peixe assado
@@ -41451,6 +42960,86 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 25.8
       objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 61
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 4128
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 588
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 44
+      objectReference: {fileID: 0}
     - target: {fileID: 8855285588936439114, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_SizeDelta.y
       value: 95
@@ -41458,6 +43047,46 @@ PrefabInstance:
     - target: {fileID: 8855285588936439114, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -41.1614
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Cor
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nome
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Grupo
+      value: 32768
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Sabor
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Estado
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Funcao
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Metodo
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Textura
+      value: 258
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Refeicao
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
+      propertyPath: Nutrientes
+      value: 584
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -41487,33 +43116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
---- !u!1 &1680478111 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6330462146944866333, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 142212033}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1680478115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680478111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!1001 &1685824958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41522,6 +43124,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 181506856}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -42023,6 +43629,7 @@ GameObject:
   - component: {fileID: 1719867048}
   - component: {fileID: 1719867050}
   - component: {fileID: 1719867049}
+  - component: {fileID: 1719867051}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -42088,6 +43695,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719867047}
   m_CullTransparentMesh: 1
+--- !u!114 &1719867051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719867047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5b9fb68ec1d5849986a81323b1110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDropZone
+  _categoria: 3
+  _refeicao: 0
+  _foodImage: {fileID: 305798931}
+  _foodNameText: {fileID: 805676480}
 --- !u!1 &1726792754
 GameObject:
   m_ObjectHideFlags: 0
@@ -42480,6 +44103,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1381215802}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -42592,33 +44223,6 @@ PrefabInstance:
       addedObject: {fileID: 1536961627}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
---- !u!1 &1748155378 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6898531964209326612, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 142212033}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1748155382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1748155378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!1001 &1751152806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42935,9 +44539,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -9146336171254135938, guid: 298098add2018374fb8c18ea33684225, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -43072,7 +44676,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1365360107}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.41929471
+  m_Size: 0.4096356
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -43559,9 +45163,9 @@ RectTransform:
   m_Father: {fileID: 1796078241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: -17}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1772306641
 MonoBehaviour:
@@ -44462,7 +46066,7 @@ RectTransform:
   m_Father: {fileID: 2146789776}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.9726652, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -44770,7 +46374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1808901963
 RectTransform:
   m_ObjectHideFlags: 0
@@ -44787,7 +46391,6 @@ RectTransform:
   - {fileID: 735232735}
   - {fileID: 1014841154}
   - {fileID: 272332400}
-  - {fileID: 755834509}
   m_Father: {fileID: 645202164}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -45126,6 +46729,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 181506856}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -45232,6 +46839,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1671251149}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -46254,9 +47869,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -9146336171254135938, guid: 298098add2018374fb8c18ea33684225, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -46471,9 +48086,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -9146336171254135938, guid: 298098add2018374fb8c18ea33684225, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -46709,7 +48324,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1590514498}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.41929471
+  m_Size: 0.4096356
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -46752,33 +48367,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896792873}
   m_CullTransparentMesh: 1
---- !u!1 &1898338487 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2141692572588805615, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 142212033}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1898338491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898338487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!1 &1901881190
 GameObject:
   m_ObjectHideFlags: 0
@@ -47059,7 +48647,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1494433616}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25496107}
+  m_AnchorMin: {x: 0, y: 0.27212417}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -47932,6 +49520,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1808901963}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -48178,6 +49774,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1808901963}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -48648,6 +50252,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1140489850}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -48969,6 +50577,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1808901963}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -49790,7 +51406,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: -17, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2028594253
 MonoBehaviour:
@@ -50097,33 +51713,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 15.827, y: 1760}
   m_Pivot: {x: 0, y: 1}
---- !u!1 &2042754618 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6330462146944866333, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 1049922215}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2042754622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042754618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!1 &2050363244
 GameObject:
   m_ObjectHideFlags: 0
@@ -50135,6 +51724,7 @@ GameObject:
   - component: {fileID: 2050363245}
   - component: {fileID: 2050363247}
   - component: {fileID: 2050363246}
+  - component: {fileID: 2050363248}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -50200,6 +51790,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050363244}
   m_CullTransparentMesh: 1
+--- !u!114 &2050363248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050363244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5b9fb68ec1d5849986a81323b1110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDropZone
+  _categoria: 2
+  _refeicao: 1
+  _foodImage: {fileID: 1891826466}
+  _foodNameText: {fileID: 200880269}
 --- !u!1001 &2056188850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50208,6 +51814,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1381215802}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -52189,33 +53803,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137522723}
   m_CullTransparentMesh: 1
---- !u!1 &2139919879 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3248271621281242360, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
-  m_PrefabInstance: {fileID: 142212033}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2139919883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139919879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaaa7c47e8e75408720ddc4743f956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CategorizacaoAlimento
-  Nome: 0
-  Funcao: 0
-  Refeicao: 0
-  Nutrientes: 0
-  Estado: 0
-  Metodo: 0
-  Textura: 0
-  Sabor: 0
-  Cor: 0
-  Grupo: 0
 --- !u!1 &2140919907
 GameObject:
   m_ObjectHideFlags: 0
@@ -52775,7 +54362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6448940809573291439, guid: ae077ede7e793c6488adc68cab8a6be8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9031404029347302363, guid: ae077ede7e793c6488adc68cab8a6be8, type: 3}
       propertyPath: m_Pivot.x
@@ -53106,6 +54693,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 471793398}
     m_Modifications:
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _refeicao
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 832139630281909068, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
+      propertyPath: _categoria
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

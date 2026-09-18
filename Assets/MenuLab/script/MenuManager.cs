@@ -43,6 +43,9 @@ public class MenuManager : MonoBehaviour
 
         _currentCanvasGroup = m.Name;
 
+        if (m.Group != null)
+            ScrollViewUtils.ResetContentPositionY(m.Group.transform);
+
         StartCoroutine(SwitchCanvasGroupAnimated(_menuBackground, turnBackground));
 
         foreach (MenuPanel menu in _menus)

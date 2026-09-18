@@ -160,6 +160,7 @@ public enum Metodo
     [InspectorName("Preparado na chapa")] PreparadoNaChapa = 1 << 16,
     Refogado = 1 << 17,
     Vapor = 1 << 18,
+    Refrigerado = 1 << 19,
 }
 
 [Flags]
@@ -177,6 +178,7 @@ public enum Textura
     Macia = 1 << 8,
     Suculenta = 1 << 9,
     Viscosa = 1 << 10,
+    Espessa = 1 << 11,
 }
 
 [Flags]
@@ -192,6 +194,8 @@ public enum Sabor
     Retrogosto = 1 << 6,
     Salgado = 1 << 7,
     Suave = 1 << 8,
+    [InspectorName("Levemente amargo")] LevementeAmargo = 1 << 9,
+    Picante = 1 << 10,
 }
 
 [Flags]
@@ -214,6 +218,24 @@ public enum Cor
     [InspectorName("Verde claro")] VerdeClaro = 1 << 13,
     Vermelho = 1 << 14,
     Transparente = 1 << 15,
+}
+
+public enum CategoriaPrato
+{
+    Acompanhamento,
+    Bebida,
+    Complemento,
+    [InspectorName("Guarnição")] Guarnicao,
+    Principal,
+    Salada,
+    Sobremesa,
+}
+
+public enum RefeicaoPrato
+{
+    Almoco,
+    [InspectorName("Café da manhã")] CafeDaManha,
+    Jantar,
 }
 
 [Flags]

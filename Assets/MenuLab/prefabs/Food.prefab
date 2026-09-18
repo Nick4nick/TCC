@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 133217878278987689}
   - component: {fileID: 1709307534622679169}
   - component: {fileID: 860293788993743356}
+  - component: {fileID: 3157375070360486527}
   m_Layer: 0
   m_Name: foodImg
   m_TagString: Untagged
@@ -98,6 +99,21 @@ MonoBehaviour:
   Sabor: 0
   Cor: 0
   Grupo: 0
+--- !u!114 &3157375070360486527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3024941012884026461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e45f412ac44d94d4d828ed00f1f70b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodDragHandler
+  _dados: {fileID: 860293788993743356}
+  _image: {fileID: 1709307534622679169}
+  _nameText: {fileID: 8048858224726170030}
 --- !u!1 &7467093242444651174
 GameObject:
   m_ObjectHideFlags: 0

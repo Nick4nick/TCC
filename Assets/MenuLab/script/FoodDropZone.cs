@@ -1,0 +1,77 @@
+using System;
+using TMPro;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+public class FoodDropZone : MonoBehaviour, IDropHandler
+{
+    public static event Action ContentChanged;
+
+
+    [Header("Categoria")]
+    [Tooltip("Categoria deste drop, usada apenas como informação/marcação")]
+    [SerializeField] private CategoriaPrato _categoria;
+    [Tooltip("Refeição deste drop, usada apenas como informação/marcação")]
+    [SerializeField] private RefeicaoPrato _refeicao;
+
+    [Header("Referências")]
+    [Tooltip("Imagem que vai exibir o sprite do alimento recebido")]
+    [SerializeField] private Image _foodImage;
+    [Tooltip("Texto que fica inativo até receber um alimento, exibindo então o nome dele")]
+    [SerializeField] private TMP_Text _foodNameText;
+
+    public CategoriaPrato Categoria => _categoria;
+    public RefeicaoPrato Refeicao => _refeicao;
+    public CategorizacaoAlimento AlimentoAtual { get; private set; }
+
+    private void Awake()
+    {
+        LimparDrop();
+    }
+
+    public void OnDrop(PointerEventData eventData)
+    {
+        if (eventData.pointerDrag == null)
+            return;
+
+        FoodDragHandler drag = eventData.pointerDrag.GetComponent<FoodDragHandler>();
+        if (drag == null)
+            return;
+
+        ReceberAlimento(drag);
+    }
+
+    private void ReceberAlimento(FoodDragHandler drag)
+    {
+        AlimentoAtual = drag.Dados;
+
+        if (_foodImage != null)
+        {
+            _foodImage.sprite = drag.Sprite;
+            _foodImage.enabled = drag.Sprite != null;
+        }
+
+        if (_foodNameText != null)
+        {
+            _foodNameText.text = drag.NomeExibido;
+            _foodNameText.gameObject.SetActive(true);
+        }
+
+        ContentChanged?.Invoke();
+    }
+
+    private void LimparDrop()
+    {
+        AlimentoAtual = null;
+
+        if (_foodImage != null)
+        {
+            _foodImage.sprite = null;
+            _foodImage.enabled = false;
+        }
+
+        if (_foodNameText != null)
+            _foodNameText.gameObject.SetActive(false);
+    }
+}
