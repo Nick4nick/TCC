@@ -458,7 +458,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21776519}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -6930,7 +6930,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.87169814, g: 0.87169814, b: 0.87169814, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -8282,7 +8282,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.87169814, g: 0.87169814, b: 0.87169814, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -12288,7 +12288,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500011621}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -17251,7 +17251,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.47843137}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -18463,6 +18463,69 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2170680523628732345, guid: a1f28ba6723c33e42a5d3aa13d2e1646, type: 3}
   m_PrefabInstance: {fileID: 676963966}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &677878226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 677878227}
+  - component: {fileID: 677878228}
+  m_Layer: 0
+  m_Name: SoundSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &677878227
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677878226}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &677878228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677878226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1162b06ef5bb3f44a71768695ee6cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundManager
+  _musicPlaylist:
+  - {fileID: 8300000, guid: 26094486958ccaf4a99e6c1e4dce32dd, type: 3}
+  - {fileID: 8300000, guid: ed2b192953ce93e428329aaa8acc10e4, type: 3}
+  - {fileID: 8300000, guid: 8bb1b81e0f5348b4997ebd3cb55ad7c2, type: 3}
+  _musicSource: {fileID: 0}
+  _musicVolume: 0.1
+  _sfxSource: {fileID: 0}
+  _buttonClickSfx:
+    Clip: {fileID: 8300000, guid: ef74b3245bf9e1d4bbb9d3b6172a377a, type: 3}
+    Volume: 1
+  _dropSfx:
+    Clip: {fileID: 8300000, guid: 8ee93b7767d8689499207fb2695fabb0, type: 3}
+    Volume: 0.3
+  _feedbackNotaAltaSfx:
+    Clip: {fileID: 8300000, guid: f1bfd704864de12419e6ec98f6fb8709, type: 3}
+    Volume: 0.55
+  _feedbackNotaBaixaSfx:
+    Clip: {fileID: 8300000, guid: 9ca49962005745f41a56da809e60c0b7, type: 3}
+    Volume: 0.55
 --- !u!1 &688181057
 GameObject:
   m_ObjectHideFlags: 0
@@ -20350,7 +20413,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.9169811, g: 0.9169811, b: 0.9169811, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -21991,14 +22054,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameConfig
   _menuLab: {fileID: 22731561}
   _gameMenu: {fileID: 308155972}
+  _fadeDuration: 0.25
   _mainMenu: {fileID: 924793810}
   _creditsMenu: {fileID: 500011627}
   _mapMenu: {fileID: 669551314}
   _feedbackMenu: {fileID: 21776525}
   _levelSelectedConfig: {fileID: 669551313}
+  _paperLevelSelected:
+  - {fileID: 1653958858}
+  - {fileID: 761542545}
+  - {fileID: 1926097370}
+  - {fileID: 63164013}
+  - {fileID: 1071516705}
+  _menuMade: {fileID: 1080823763}
   _GameExitButton: {fileID: 1027028001}
   _GameCloseButton: {fileID: 150250587}
-  _phaseEmpties:
+  _phase:
   - {fileID: 487756847}
   - {fileID: 1813178958}
   - {fileID: 1106774554}
@@ -22006,7 +22077,7 @@ MonoBehaviour:
   - {fileID: 1353818940}
   _pantry: {fileID: 465052926}
   _briefingButton: {fileID: 1872512826}
-  _briefingEmpty: {fileID: 1106837062}
+  _briefing: {fileID: 1106837062}
   _briefingCloseButton1: {fileID: 232115624}
   _briefingCloseButton2: {fileID: 1051574545}
   _briefingFaseText: {fileID: 79239947}
@@ -22016,7 +22087,7 @@ MonoBehaviour:
   _briefingRefeicaoText: {fileID: 568270564}
   _briefingTextoText: {fileID: 1505111948}
   _helpBookButton: {fileID: 1989364456}
-  _helpBookEmpty: {fileID: 1385606485}
+  _helpBook: {fileID: 1385606485}
   _helpBookCloseButton1: {fileID: 1513422220}
   _helpBookCloseButton2: {fileID: 2013681842}
   _helpBookPages:
@@ -22098,9 +22169,9 @@ MonoBehaviour:
     PageIndex: 19
   - Button: {fileID: 987268816}
     PageIndex: 19
-  _fase5PreviousEmptyButton: {fileID: 1768399131}
-  _fase5NextEmptyButton: {fileID: 1430376522}
-  _fase5Empties:
+  _fase5PreviousButton: {fileID: 1768399131}
+  _fase5NextButton: {fileID: 1430376522}
+  _fase5Cardapios:
   - {fileID: 1808901962}
   - {fileID: 1523033111}
   - {fileID: 1671251148}
@@ -25611,7 +25682,7 @@ PrefabInstance:
     - target: {fileID: 8123139299040473153, guid: e3d480e34c0719648ba97927cfd78cf2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -5943647194490953685, guid: a6347f67854077b4e9c5a5852715e157, type: 3}
+      objectReference: {fileID: -5943647194490953685, guid: bdb4cd1c3572b0f4b80b161b347acc04, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27067,7 +27138,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 329749774}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.27063563
+  m_Size: 0.25842166
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -31090,7 +31161,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.87169814, g: 0.87169814, b: 0.87169814, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -34860,7 +34931,7 @@ PrefabInstance:
     - target: {fileID: 8123139299040473153, guid: e3d480e34c0719648ba97927cfd78cf2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 633310346938716576, guid: 24d44d76e43140c498f2cdee183a6f8a, type: 3}
+      objectReference: {fileID: 633310346938716576, guid: 8e6892a7de6c38547ba4868864367635, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35499,7 +35570,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.87169814, g: 0.87169814, b: 0.87169814, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -39658,7 +39729,7 @@ PrefabInstance:
     - target: {fileID: 8123139299040473153, guid: e3d480e34c0719648ba97927cfd78cf2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 8163944573774554800, guid: 3306ccc187d592145992ee7339c1e9ab, type: 3}
+      objectReference: {fileID: 8163944573774554800, guid: 9520736f389638a4f9d1c4119bc17f69, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43901,7 +43972,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.87169814, g: 0.87169814, b: 0.87169814, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -47755,7 +47826,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -49139,8 +49210,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.3047, y: -31.4335}
-  m_SizeDelta: {x: 951.448, y: 594.9816}
+  m_AnchoredPosition: {x: -0.3047, y: -18.3911}
+  m_SizeDelta: {x: 951.448, y: 568.8969}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1920588749
 MonoBehaviour:
@@ -50437,7 +50508,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -55418,5 +55489,6 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1229760073}
+  - {fileID: 677878227}
   - {fileID: 188143990}
   - {fileID: 819631368}

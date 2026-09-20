@@ -58,7 +58,29 @@ public class FoodDropZone : MonoBehaviour, IDropHandler
             _foodNameText.gameObject.SetActive(true);
         }
 
+        SoundManager.Instance?.PlayDropSfx();
+
         ContentChanged?.Invoke();
+    }
+
+    public void CopyFrom(FoodDropZone other)
+    {
+        if (other == null)
+            return;
+
+        AlimentoAtual = other.AlimentoAtual;
+
+        if (_foodImage != null && other._foodImage != null)
+        {
+            _foodImage.sprite = other._foodImage.sprite;
+            _foodImage.enabled = other._foodImage.enabled;
+        }
+
+        if (_foodNameText != null && other._foodNameText != null)
+        {
+            _foodNameText.text = other._foodNameText.text;
+            _foodNameText.gameObject.SetActive(other._foodNameText.gameObject.activeSelf);
+        }
     }
 
     private void LimparDrop()
