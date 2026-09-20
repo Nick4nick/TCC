@@ -83,6 +83,15 @@ public class FoodDropZone : MonoBehaviour, IDropHandler
         }
     }
 
+    /// <summary>
+    /// Limpa o alimento deste drop. Usado ao sair de uma fase sem finalizá-la, para que
+    /// uma nova tentativa dessa fase não comece com o que foi deixado da vez anterior.
+    /// </summary>
+    public void Limpar()
+    {
+        LimparDrop();
+    }
+
     private void LimparDrop()
     {
         AlimentoAtual = null;

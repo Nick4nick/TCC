@@ -117749,3 +117749,87 @@ Memory consumption went from 266.7 MB to 256.2 MB.
 Total: 83.992300 ms (FindLiveObjects: 1.915900 ms CreateObjectMapping: 2.237800 ms MarkObjects: 19.383400 ms  DeleteObjects: 60.451300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 4301.682989 seconds.
+  path: Assets/MenuLab/script/ScrollViewUtils.cs
+  artifactKey: Guid(316990d539369004b90486336f6675bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/script/ScrollViewUtils.cs using Guid(316990d539369004b90486336f6675bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7ada051d9b9cbbb47b8fb359e455ff9e') in 0.227995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MenuLab/sound/music/maksymmalko-cooking-food-music-399363.mp3
+  artifactKey: Guid(26094486958ccaf4a99e6c1e4dce32dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/sound/music/maksymmalko-cooking-food-music-399363.mp3 using Guid(26094486958ccaf4a99e6c1e4dce32dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f9423d4d5def35227c97d2f1e82c0a5b') in 0.2367135 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/MenuLab/sound/sfx
+  artifactKey: Guid(67e8f93ad6f4c2e40be8a7e73b11b727) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/sound/sfx using Guid(67e8f93ad6f4c2e40be8a7e73b11b727) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '399dadb5e36885c87dd8c6c4bf490fa7') in 0.0337674 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/MenuLab/sound/sfx/win.mp3
+  artifactKey: Guid(f1bfd704864de12419e6ec98f6fb8709) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/sound/sfx/win.mp3 using Guid(f1bfd704864de12419e6ec98f6fb8709) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5e32023fb36614dfed9a27e71e554d95') in 0.09139 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/MenuLab/sound/sfx/Drop.mp3
+  artifactKey: Guid(8ee93b7767d8689499207fb2695fabb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/sound/sfx/Drop.mp3 using Guid(8ee93b7767d8689499207fb2695fabb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dbc7e26c0435bee8881c7e54409a7e46') in 0.0536914 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/MenuLab/script/FoodDropZone.cs
+  artifactKey: Guid(bc5b9fb68ec1d5849986a81323b1110e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/script/FoodDropZone.cs using Guid(bc5b9fb68ec1d5849986a81323b1110e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '81b9453dad52bbe020ce6496de1ba2f8') in 0.0290165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/MenuLab/sound/sfx/lose.mp3
+  artifactKey: Guid(9ca49962005745f41a56da809e60c0b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/sound/sfx/lose.mp3 using Guid(9ca49962005745f41a56da809e60c0b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bcfaed3b6a228e8ba045d7ccae2ba1d2') in 0.0671769 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/MenuLab/sound/music/sosin-food-cooking-music-537566.mp3
+  artifactKey: Guid(ed2b192953ce93e428329aaa8acc10e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/sound/music/sosin-food-cooking-music-537566.mp3 using Guid(ed2b192953ce93e428329aaa8acc10e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f9d2c076fe26ba4a93f024226e587b4c') in 0.0605979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/MenuLab/sound/sfx/btn.mp3
+  artifactKey: Guid(ef74b3245bf9e1d4bbb9d3b6172a377a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/sound/sfx/btn.mp3 using Guid(ef74b3245bf9e1d4bbb9d3b6172a377a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5d51b181cf0a60b62bd7db1e1dc07463') in 0.0420443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/MenuLab/sound/music
+  artifactKey: Guid(7cfc8d12abfdbca43b78309476eea6b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MenuLab/sound/music using Guid(7cfc8d12abfdbca43b78309476eea6b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6a5bf0c78ecf22eb6b539515dad0f964') in 0.0292785 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

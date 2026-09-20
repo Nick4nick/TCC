@@ -407,6 +407,8 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
         {
             _menuLab.SetActive(false);
 
+            ClearPhaseDropZones(_selectedLevelIndex);
+
             DeactivateAllPhaseEmpties();
 
             _gameState = GameState.OutGame;
@@ -824,6 +826,22 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
                 if (phaseEmpty != null)
                     phaseEmpty.SetActive(false);
             }
+        }
+
+        /// <summary>
+        /// Limpa todos os drops de uma fase (inclusive os 3 cardápios da Fase 5, que ficam
+        /// aninhados dentro do mesmo Empty). Usado ao sair da fase sem finalizá-la — os
+        /// FoodDropZone não se limpam sozinhos ao desativar, então sem isso uma nova tentativa
+        /// dessa fase começaria com o que foi deixado da vez anterior.
+        /// </summary>
+        private void ClearPhaseDropZones(int levelIndex)
+        {
+            if (_phase == null || levelIndex < 0 || levelIndex >= _phase.Count || _phase[levelIndex] == null)
+                return;
+
+            FoodDropZone[] dropZones = _phase[levelIndex].GetComponentsInChildren<FoodDropZone>(true);
+            foreach (FoodDropZone dropZone in dropZones)
+                dropZone.Limpar();
         }
 
         private void CopyPhaseToMenuMade()
