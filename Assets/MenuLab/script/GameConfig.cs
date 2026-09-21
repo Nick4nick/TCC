@@ -18,6 +18,9 @@ namespace GameTemplate
     {
         public Button Button;
         public int PageIndex;
+
+        [System.NonSerialized] public TMP_Text Text;
+        [System.NonSerialized] public Color DefaultColor;
     }
 
     public class GameConfig : MonoBehaviour
@@ -87,6 +90,8 @@ namespace GameTemplate
         [SerializeField] private List<PageJumpButton> _helpBookChapterJumpButtons;
         [Tooltip("Botões de pulo para o alfabeto, cada um aponta para o índice da página em HelpBook Pages")]
         [SerializeField] private List<PageJumpButton> _helpBookAlphabetJumpButtons;
+        [Tooltip("Cor do texto do Chapter Jump Button enquanto a página exibida pertence ao seu capítulo")]
+        [SerializeField] private Color _helpBookChapterJumpButtonHighlightColor = new Color32(0xBA, 0xA7, 0x97, 0xFF);
 
         [Space(5)]
         [Header("Fase 5 - Troca de cardápio")]
@@ -116,6 +121,8 @@ namespace GameTemplate
         private int _selectedLevelIndex = -1;
 
         private int _helpBookPageIndex = 0;
+
+        private bool _helpBookChapterJumpButton0Highlighted = false;
 
         private int _fase5EmptyIndex = 0;
 
@@ -655,6 +662,7 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
 
             FadeIn(_helpBook, _fadeDuration);
 
+            _helpBookChapterJumpButton0Highlighted = false;
             ShowHelpBookPage(0);
         }
 
@@ -688,6 +696,38 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
             _helpBookPageIndex = pageIndex;
 
             UpdateHelpBookNavigationButtons();
+            UpdateHelpBookChapterJumpButtonsColor();
+        }
+
+        private void UpdateHelpBookChapterJumpButtonsColor()
+        {
+            if (_helpBookChapterJumpButtons == null)
+                return;
+
+            for (int i = 0; i < _helpBookChapterJumpButtons.Count; i++)
+            {
+                PageJumpButton jump = _helpBookChapterJumpButtons[i];
+                if (jump == null || jump.Text == null)
+                    continue;
+
+                bool highlighted;
+
+                if (i == 0)
+                {
+                    highlighted = _helpBookChapterJumpButton0Highlighted;
+                }
+                else
+                {
+                    int rangeStart = jump.PageIndex;
+                    int rangeEnd = (i + 1 < _helpBookChapterJumpButtons.Count)
+                        ? _helpBookChapterJumpButtons[i + 1].PageIndex
+                        : (_helpBookPages != null ? _helpBookPages.Count : rangeStart + 1);
+
+                    highlighted = _helpBookPageIndex >= rangeStart && _helpBookPageIndex < rangeEnd;
+                }
+
+                jump.Text.color = highlighted ? _helpBookChapterJumpButtonHighlightColor : jump.DefaultColor;
+            }
         }
 
         private void UpdateHelpBookNavigationButtons()
@@ -704,11 +744,13 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
 
         private void NextHelpBookPage()
         {
+            _helpBookChapterJumpButton0Highlighted = false;
             ShowHelpBookPage(_helpBookPageIndex + 1);
         }
 
         private void PreviousHelpBookPage()
         {
+            _helpBookChapterJumpButton0Highlighted = false;
             ShowHelpBookPage(_helpBookPageIndex - 1);
         }
 
@@ -1211,13 +1253,23 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
 
             if (_helpBookChapterJumpButtons != null)
             {
-                foreach (PageJumpButton jump in _helpBookChapterJumpButtons)
+                for (int i = 0; i < _helpBookChapterJumpButtons.Count; i++)
                 {
+                    PageJumpButton jump = _helpBookChapterJumpButtons[i];
                     if (jump == null || jump.Button == null)
                         continue;
 
+                    jump.Text = jump.Button.GetComponentInChildren<TMP_Text>();
+                    if (jump.Text != null)
+                        jump.DefaultColor = jump.Text.color;
+
                     int pageIndex = jump.PageIndex;
-                    jump.Button.onClick.AddListener(() => ShowHelpBookPage(pageIndex));
+                    bool isFirstButton = i == 0;
+                    jump.Button.onClick.AddListener(() =>
+                    {
+                        _helpBookChapterJumpButton0Highlighted = isFirstButton;
+                        ShowHelpBookPage(pageIndex);
+                    });
                 }
             }
 
@@ -1229,7 +1281,11 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
                         continue;
 
                     int pageIndex = jump.PageIndex;
-                    jump.Button.onClick.AddListener(() => ShowHelpBookPage(pageIndex));
+                    jump.Button.onClick.AddListener(() =>
+                    {
+                        _helpBookChapterJumpButton0Highlighted = false;
+                        ShowHelpBookPage(pageIndex);
+                    });
                 }
             }
 

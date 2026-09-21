@@ -18903,8 +18903,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.7778, y: -8.7629}
-  m_SizeDelta: {x: 504.8555, y: 1106.2886}
+  m_AnchoredPosition: {x: -0.000032425, y: -8.7629}
+  m_SizeDelta: {x: 483.3, y: 1106.2886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697303271
 MonoBehaviour:
@@ -22988,7 +22988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5411765, g: 0.38823533, b: 0.27058825, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -36011,7 +36011,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1385606486
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36181,7 +36181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7660377, g: 0.5657551, b: 0.38590956, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -52299,7 +52299,7 @@ PrefabInstance:
     - target: {fileID: 8123139299040473153, guid: e3d480e34c0719648ba97927cfd78cf2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2879352100758615112, guid: 053d94824b5e65a4d9b465bcbd60219e, type: 3}
+      objectReference: {fileID: 2879352100758615112, guid: 5eb4f7a186650ad4f94b66066fac1b34, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54730,6 +54730,22 @@ PrefabInstance:
     - target: {fileID: 4168474417358067130, guid: 54b51f5f297773f469b846451dc158d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926104807098263611, guid: 54b51f5f297773f469b846451dc158d3, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926104807098263611, guid: 54b51f5f297773f469b846451dc158d3, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926104807098263611, guid: 54b51f5f297773f469b846451dc158d3, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926104807098263611, guid: 54b51f5f297773f469b846451dc158d3, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7836262386455684923, guid: 54b51f5f297773f469b846451dc158d3, type: 3}
       propertyPath: m_Name
