@@ -222,7 +222,7 @@ public static class MenuFeedbackEvaluator
         var grupos = filled.GroupBy(z => (z.Categoria, z.AlimentoAtual.Nome));
         foreach (var grupo in grupos)
         {
-            if (grupo.Count() < 2)
+            if (grupo.Count() < 3)
                 continue;
 
             any = true;
@@ -241,7 +241,7 @@ public static class MenuFeedbackEvaluator
         var grupos = filled
             .Where(z => z.AlimentoAtual.Nutrientes != Nutriente.None)
             .GroupBy(z => z.AlimentoAtual.Nutrientes)
-            .Where(g => g.Count() >= 2)
+            .Where(g => g.Count() >= 3)
             .ToList();
 
         if (grupos.Count == 0)
@@ -266,7 +266,7 @@ public static class MenuFeedbackEvaluator
         var grupos = filled
             .Where(z => z.AlimentoAtual.Cor != Cor.None)
             .GroupBy(z => z.AlimentoAtual.Cor)
-            .Where(g => g.Count() >= 2)
+            .Where(g => g.Count() >= 3)
             .ToList();
 
         if (grupos.Count == 0)
@@ -290,7 +290,7 @@ public static class MenuFeedbackEvaluator
         var grupos = filled
             .Where(z => z.AlimentoAtual.Sabor != Sabor.None)
             .GroupBy(z => z.AlimentoAtual.Sabor)
-            .Where(g => g.Count() >= 2)
+            .Where(g => g.Count() >= 3)
             .ToList();
 
         if (grupos.Count == 0)
@@ -315,7 +315,7 @@ public static class MenuFeedbackEvaluator
         var grupos = filled
             .Where(z => z.AlimentoAtual.Textura != Textura.None)
             .GroupBy(z => z.AlimentoAtual.Textura)
-            .Where(g => g.Count() >= 2)
+            .Where(g => g.Count() >= 3)
             .ToList();
 
         if (grupos.Count == 0)
@@ -344,7 +344,7 @@ public static class MenuFeedbackEvaluator
         var gruposGerais = filled
             .Where(z => z.AlimentoAtual.Metodo != Metodo.None)
             .GroupBy(z => z.AlimentoAtual.Metodo)
-            .Where(g => g.Count() >= 3)
+            .Where(g => g.Count() >= 4)
             .ToList();
 
         foreach (var grupo in gruposGerais)
@@ -362,7 +362,7 @@ public static class MenuFeedbackEvaluator
         var gruposPorCategoria = filled
             .Where(z => z.AlimentoAtual.Metodo != Metodo.None && !cobertosPorPredominancia.Contains(z))
             .GroupBy(z => (z.Categoria, z.AlimentoAtual.Metodo))
-            .Where(g => g.Count() >= 2)
+            .Where(g => g.Count() >= 3)
             .ToList();
 
         foreach (var grupo in gruposPorCategoria)
@@ -389,7 +389,7 @@ public static class MenuFeedbackEvaluator
         var gruposGerais = filled
             .Where(z => z.AlimentoAtual.Grupo != Grupo.None)
             .GroupBy(z => z.AlimentoAtual.Grupo)
-            .Where(g => g.Count() >= 3)
+            .Where(g => g.Count() >= 4)
             .ToList();
 
         foreach (var grupo in gruposGerais)
@@ -407,7 +407,7 @@ public static class MenuFeedbackEvaluator
         var gruposPorCategoria = filled
             .Where(z => z.AlimentoAtual.Grupo != Grupo.None && !cobertosPorPredominancia.Contains(z))
             .GroupBy(z => (z.Categoria, z.AlimentoAtual.Grupo))
-            .Where(g => g.Count() >= 2)
+            .Where(g => g.Count() >= 3)
             .ToList();
 
         foreach (var grupo in gruposPorCategoria)

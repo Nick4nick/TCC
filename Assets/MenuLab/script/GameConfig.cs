@@ -111,6 +111,7 @@ namespace GameTemplate
 
         private const string SaveHasSaveKey = "MenuLab_HasSave";
         private const string SavePhaseCompletedKeyPrefix = "MenuLab_PhaseCompleted_";
+        private const string SaveBuildIdKey = "MenuLab_BuildId";
 
         private GameState _gameState = GameState.OutGame;
 
@@ -213,7 +214,34 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
 
         private void Awake()
         {
+            DiscardSaveFromPreviousBuild();
             SetupAll();
+        }
+
+        /// <summary>
+        /// Cada build gera um ID novo (ver BuildIdGenerator, Assets/Editor). Se o ID salvo no
+        /// PlayerPrefs não bate com o da build atual, é sinal de que o save é de uma build
+        /// anterior (ex: de testes) e deve ser descartado, para a build atual sempre abrir zerada.
+        /// </summary>
+        private void DiscardSaveFromPreviousBuild()
+        {
+            TextAsset buildIdAsset = Resources.Load<TextAsset>("BuildId");
+            if (buildIdAsset == null)
+                return;
+
+            string currentBuildId = buildIdAsset.text.Trim();
+            if (string.IsNullOrEmpty(currentBuildId))
+                return;
+
+            if (PlayerPrefs.GetString(SaveBuildIdKey, "") == currentBuildId)
+                return;
+
+            PlayerPrefs.DeleteKey(SaveHasSaveKey);
+            for (int i = 0; i < (_phase != null ? _phase.Count : 0); i++)
+                PlayerPrefs.DeleteKey(SavePhaseCompletedKeyPrefix + i);
+
+            PlayerPrefs.SetString(SaveBuildIdKey, currentBuildId);
+            PlayerPrefs.Save();
         }
 
         private void OnEnable()

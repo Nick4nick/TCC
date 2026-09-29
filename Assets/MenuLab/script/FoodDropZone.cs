@@ -27,6 +27,14 @@ public class FoodDropZone : MonoBehaviour, IDropHandler
 
     private void Awake()
     {
+        if (_foodImage != null)
+        {
+            DropZoneFoodDrag foodDrag = _foodImage.GetComponent<DropZoneFoodDrag>();
+            if (foodDrag == null)
+                foodDrag = _foodImage.gameObject.AddComponent<DropZoneFoodDrag>();
+            foodDrag.Init(this, _foodImage);
+        }
+
         LimparDrop();
     }
 
@@ -35,6 +43,13 @@ public class FoodDropZone : MonoBehaviour, IDropHandler
         if (eventData.pointerDrag == null)
             return;
 
+        DropZoneFoodDrag zoneDrag = eventData.pointerDrag.GetComponent<DropZoneFoodDrag>();
+        if (zoneDrag != null)
+        {
+            ReceberDeOutroDrop(zoneDrag);
+            return;
+        }
+
         FoodDragHandler drag = eventData.pointerDrag.GetComponent<FoodDragHandler>();
         if (drag == null)
             return;
@@ -42,21 +57,71 @@ public class FoodDropZone : MonoBehaviour, IDropHandler
         ReceberAlimento(drag);
     }
 
-    private void ReceberAlimento(FoodDragHandler drag)
+    /// <summary>
+    /// Recebe o alimento arrastado de outro drop. Se este drop já tiver um alimento,
+    /// os dois trocam de lugar; senão o alimento só é movido.
+    /// </summary>
+    private void ReceberDeOutroDrop(DropZoneFoodDrag zoneDrag)
     {
-        AlimentoAtual = drag.Dados;
+        FoodDropZone origem = zoneDrag.Zone;
+        if (origem == null || origem.AlimentoAtual == null)
+            return;
+
+        zoneDrag.DropAceito = true;
+
+        if (origem == this)
+            return;
+
+        CategorizacaoAlimento alimento = AlimentoAtual;
+        Sprite sprite = _foodImage != null ? _foodImage.sprite : null;
+        string nome = _foodNameText != null ? _foodNameText.text : string.Empty;
+
+        SetConteudo(origem.AlimentoAtual,
+            origem._foodImage != null ? origem._foodImage.sprite : null,
+            origem._foodNameText != null ? origem._foodNameText.text : string.Empty);
+
+        if (alimento != null)
+            origem.SetConteudo(alimento, sprite, nome);
+        else
+            origem.LimparDrop();
+
+        SoundManager.Instance?.PlayDropSfx();
+
+        ContentChanged?.Invoke();
+    }
+
+    private void SetConteudo(CategorizacaoAlimento alimento, Sprite sprite, string nome)
+    {
+        AlimentoAtual = alimento;
 
         if (_foodImage != null)
         {
-            _foodImage.sprite = drag.Sprite;
-            _foodImage.enabled = drag.Sprite != null;
+            _foodImage.sprite = sprite;
+            _foodImage.enabled = sprite != null;
         }
 
         if (_foodNameText != null)
         {
-            _foodNameText.text = drag.NomeExibido;
+            _foodNameText.text = nome;
             _foodNameText.gameObject.SetActive(true);
         }
+    }
+
+    /// <summary>
+    /// Remove o alimento deste drop (ao arrastá-lo para fora de qualquer drop).
+    /// </summary>
+    public void Remover()
+    {
+        if (AlimentoAtual == null)
+            return;
+
+        LimparDrop();
+        ContentChanged?.Invoke();
+    }
+
+    private void ReceberAlimento(FoodDragHandler drag)
+    {
+        SetConteudo(drag.Dados, drag.Sprite, drag.NomeExibido);
 
         SoundManager.Instance?.PlayDropSfx();
 

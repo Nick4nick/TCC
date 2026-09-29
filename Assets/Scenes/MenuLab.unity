@@ -4171,7 +4171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Funcao
-      value: 17
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Metodo
@@ -4759,7 +4759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Funcao
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Metodo
@@ -13776,7 +13776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Funcao
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Metodo
@@ -14364,7 +14364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Funcao
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Metodo
@@ -15892,7 +15892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Funcao
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4589745795317338190, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Metodo
@@ -16192,7 +16192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Funcao
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8738247254022821930, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Metodo
@@ -22169,6 +22169,7 @@ MonoBehaviour:
     PageIndex: 19
   - Button: {fileID: 987268816}
     PageIndex: 19
+  _helpBookChapterJumpButtonHighlightColor: {r: 0.7294118, g: 0.654902, b: 0.5921569, a: 1}
   _fase5PreviousButton: {fileID: 1768399131}
   _fase5NextButton: {fileID: 1430376522}
   _fase5Cardapios:
@@ -28245,7 +28246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Refeicao
-      value: 5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Nutrientes
@@ -28641,7 +28642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Refeicao
-      value: 5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6472315890221164485, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Nutrientes
@@ -28833,7 +28834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Refeicao
-      value: 5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 9058530173763975093, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Nutrientes
@@ -36011,7 +36012,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1385606486
 RectTransform:
   m_ObjectHideFlags: 0
@@ -52626,7 +52627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Funcao
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Metodo
@@ -53106,7 +53107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Funcao
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Metodo
@@ -55039,7 +55040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Funcao
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2439865010817492221, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Metodo
