@@ -935,6 +935,10 @@ Utilize os conhecimentos adquiridos durante as fases anteriores."
                 CopyFase5NavigationButtons(originalPhase);
             else
                 CopyDropZonesData(originalPhase, _menuMadeCopy);
+
+            // O cardápio feito na tela de feedback é só para visualização.
+            foreach (FoodDropZone dropZone in _menuMadeCopy.GetComponentsInChildren<FoodDropZone>(true))
+                dropZone.Bloquear();
         }
 
         private void ClearMenuMade()

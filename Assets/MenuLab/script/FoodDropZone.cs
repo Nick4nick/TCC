@@ -25,8 +25,27 @@ public class FoodDropZone : MonoBehaviour, IDropHandler
     public RefeicaoPrato Refeicao => _refeicao;
     public CategorizacaoAlimento AlimentoAtual { get; private set; }
 
+    /// <summary>Quando bloqueado (ex: cópia exibida na tela de feedback), não aceita drops nem permite arrastar o alimento.</summary>
+    public bool Bloqueado { get; private set; }
+
+    private bool _inicializado;
+
     private void Awake()
     {
+        Inicializar();
+    }
+
+    /// <summary>
+    /// Separado do Awake para poder ser chamado antes dele: em clones ainda inativos
+    /// (ex: cardápios da Fase 5 copiados para o feedback), o Awake só roda ao ativar e,
+    /// sem essa proteção, limparia o que foi copiado via CopyFrom.
+    /// </summary>
+    private void Inicializar()
+    {
+        if (_inicializado)
+            return;
+        _inicializado = true;
+
         if (_foodImage != null)
         {
             DropZoneFoodDrag foodDrag = _foodImage.GetComponent<DropZoneFoodDrag>();
@@ -40,7 +59,7 @@ public class FoodDropZone : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        if (eventData.pointerDrag == null)
+        if (Bloqueado || eventData.pointerDrag == null)
             return;
 
         DropZoneFoodDrag zoneDrag = eventData.pointerDrag.GetComponent<DropZoneFoodDrag>();
@@ -133,6 +152,8 @@ public class FoodDropZone : MonoBehaviour, IDropHandler
         if (other == null)
             return;
 
+        Inicializar();
+
         AlimentoAtual = other.AlimentoAtual;
 
         if (_foodImage != null && other._foodImage != null)
@@ -146,6 +167,19 @@ public class FoodDropZone : MonoBehaviour, IDropHandler
             _foodNameText.text = other._foodNameText.text;
             _foodNameText.gameObject.SetActive(other._foodNameText.gameObject.activeSelf);
         }
+    }
+
+    /// <summary>
+    /// Impede arrastar o alimento deste drop e receber novos alimentos.
+    /// </summary>
+    public void Bloquear()
+    {
+        Inicializar();
+        Bloqueado = true;
+
+        // Sem raycast na imagem, o arraste vai para o Scroll View do cardápio (a rolagem continua funcionando).
+        if (_foodImage != null)
+            _foodImage.raycastTarget = false;
     }
 
     /// <summary>

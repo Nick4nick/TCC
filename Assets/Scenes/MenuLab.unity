@@ -28286,7 +28286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Refeicao
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1089574945194197337, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Nutrientes
@@ -52639,7 +52639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Refeicao
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 81828214864543476, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Nutrientes
@@ -53119,7 +53119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Refeicao
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8489442252218729916, guid: a2194e4091023944caf8b47b2a811ec8, type: 3}
       propertyPath: Nutrientes

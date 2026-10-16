@@ -34,7 +34,7 @@ public class DropZoneFoodDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, 
         _dragging = false;
         DropAceito = false;
 
-        if (_zone == null || _zone.AlimentoAtual == null || _image == null || !_image.enabled)
+        if (_zone == null || _zone.Bloqueado || _zone.AlimentoAtual == null || _image == null || !_image.enabled)
             return;
 
         _canvas = GetComponentInParent<Canvas>();
